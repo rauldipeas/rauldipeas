@@ -1,5 +1,8 @@
 name: Blog post workflow
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '0 * * * *'
   workflow_dispatch:
