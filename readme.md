@@ -9,7 +9,7 @@
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=rauldipeas&include_all_commits=true&count_private=true&show_icons=true&theme=dark&hide_border=true&hide_title=true)](https://github.com/anuraghazra/github-readme-stats)
 [![Wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=rauldipeas&layout=compact&theme=dark&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
 
-# Últimas postagens
+# Últimas postagens no blog [**BeRoot**](https://beroot.now.sh)
 <!-- BLOG-POST-LIST:START -->
 - [Gerenciador de histórico da linha de comando HSTR](/hstr/)
 - [Editor de texto Micro](/micro/)
