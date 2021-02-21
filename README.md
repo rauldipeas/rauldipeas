@@ -11,4 +11,9 @@
 
 # Últimas postagens
 <!-- BLOG-POST-LIST:START -->
+- [Gerenciador de histórico da linha de comando HSTR](/hstr/)
+- [Editor de texto Micro](/micro/)
+- [Produção musical no Debian](/promudeb/)
+- [Todos os sistemas em 1 com Twister UI](/twister-ui/)
+- [Debian com tema Fluent Design](/debian-fluent/)
 <!-- BLOG-POST-LIST:END -->
