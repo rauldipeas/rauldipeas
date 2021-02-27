@@ -11,6 +11,8 @@
 
 # Últimas postagens no [**Dev.to**](https://dev.to/rauldipeas)
 <!-- DEVTO:START -->
+- [Desenvolvendo o Dekuve - Organização do projeto](https://dev.to/rauldipeas/desenvolvendo-o-dekuve-organizacao-do-projeto-2oj0)
+- [Desenvolvendo o Dekuve - Apresentação](https://dev.to/rauldipeas/desenvolvendo-o-dekuve-20o3)
 <!-- DEVTO:END -->
 # Últimas postagens no blog [**BeRoot**](https://beroot.now.sh)
 <!-- BEROOT:START -->
