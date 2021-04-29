@@ -17,9 +17,9 @@
 <!-- DEVTO:END -->
 # Últimas postagens no blog [**BeRoot**](https://beroot.now.sh)
 <!-- BEROOT:START -->
-- [Leitor de feed Fluent Reader](/fluent-reader/)
-- [Gerenciador de histórico da linha de comando HSTR](/hstr/)
-- [Editor de texto Micro](/micro/)
-- [Produção musical no Debian](/promudeb/)
-- [Todos os sistemas em 1 com Twister UI](/twister-ui/)
+- [Leitor de feed Fluent Reader](/fluent-reader.html)
+- [Gerenciador de histórico da linha de comando HSTR](/hstr.html)
+- [Editor de texto Micro](/micro.html)
+- [Produção musical no Debian](/promudeb.html)
+- [Todos os sistemas em 1 com Twister UI](/twister-ui.html)
 <!-- BEROOT:END -->
