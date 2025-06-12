@@ -18,7 +18,7 @@
   <a href="https://keybase.io/rauldipeas_wkb"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/keybase.svg"></a></li>
   <a href="https://youtube.com/rauldipeas"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/youtube.svg"></a>
   </br>
-  <img src="https://github-readme-stats.vercel.app/api?username=rauldipeas&include_all_commits=true&show_icons=true&theme=transparent&hide_border=true&hide_title=true&locale=pt-br">
+  <img src="https://github-readme-stats.vercel.app/api?username=rauldipeas&show_icons=true&theme=transparent&hide_border=true&hide_title=true&locale=pt-br">
   </br>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/rauldipeas/rauldipeas/blob/snake/snake-dark.svg">
