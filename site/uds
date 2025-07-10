@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+wget -qO- https://rauldipeas.com.br/uds.tgz|tar xzf - -C "$HOME"
+mkdir -p "$HOME"/.local/share/applications
+ln -sf "$HOME"/.uds/uds.desktop "$HOME"/.local/share/applications/
