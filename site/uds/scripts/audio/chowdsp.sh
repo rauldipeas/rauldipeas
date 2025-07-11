@@ -10,8 +10,7 @@ set -e
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
-enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
 #download
 wget -qO- https://chowdsp.com/products.html|grep deb|grep -v ChowCentaur|grep -v ChowPhaser|cut -d '"' -f2|xargs wget -q --show-progress
 #fix_launcher

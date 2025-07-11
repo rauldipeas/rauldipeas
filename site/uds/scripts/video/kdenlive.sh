@@ -12,8 +12,7 @@ TARGET="https://download.kde.org/stable/kdenlive/$KDENLIVE_VER/linux/$KDENLIVE_F
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
-enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
 download
 fix_launcher
 install_appimage

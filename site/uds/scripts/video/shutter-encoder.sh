@@ -13,8 +13,7 @@ ICON_NEW='shutter-encoder'
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
-enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
 download
 fix_launcher
 mv /tmp/Shutter*.deb /tmp/shutter-encoder.deb

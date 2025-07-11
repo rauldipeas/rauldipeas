@@ -10,8 +10,7 @@ TARGET="$(wget -qO- https://peazip.github.io/peazip-linux.html|grep GTK|grep deb
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
-enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
 download
 #fix_launcher
 install_deb

@@ -14,8 +14,7 @@ INSTNAME="curl\
      p7zip\
      xterm\
      zenity"
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
-#enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(#enter_tmp
 #download
 #ix_launcher
 install_deb
