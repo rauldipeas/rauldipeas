@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+mkdir -p "$HOME"/.local/share/{applications,icons}
+wget -q --show-progress https://rauldipeas.com.br/uds/packages-manager-icon.svg -O "$HOME"/.local/share/icons/uds.svg
+cat <<EOF |tee "$HOME"/.local/share/applications/uds.desktop
+[Desktop Entry]
+Type=Application
+Name=Pós instalação do Ubuntu (Estúdio)
+Exec=bash <(wget -qO- https://rauldipeas.com.br/uds/uds.sh)
+Icon=uds
+Terminal=false
+Categories=System;Utility;
+StartupNotify=true
+EOF

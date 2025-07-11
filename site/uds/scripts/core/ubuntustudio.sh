@@ -1,0 +1,44 @@
+#!/bin/bash
+set -e
+#LN=''
+#SWMC=''
+#TARGET="$()"
+#EXEC_OLD=''
+#EXEC_NEW=''
+#ICON_OLD=''
+#ICON_NEW=''
+DEPS="ubuntustudio-lowlatency-settings\
+	ubuntustudio-performance-tweaks\
+	ubuntustudio-pipewire-config"
+PPA='savoury1/multimedia'
+INSTNAME='helvum'
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+#enter_tmp
+#download
+#fix_launcher
+sudo debconf-set-selections <<< 'jackd2 jackd/tweak_rt_limits string true'
+install_deb
+sudo apt autoremove --purge qmidinet
+sudo usermod -aG audio,pipewire "$USER"
+sudo wget -q --show-progress -O /etc/udev/rules.d/99-cpu-dma-latency.rules https://github.com/Ardour/ardour/raw/refs/heads/master/tools/udev/99-cpu-dma-latency.rules>/dev/null
+sudo udevadm control --reload-rules
+sudo udevadm trigger
+sudo sed -i 's/ nosmt=force//g' /etc/default/grub.d/ubuntustudio.cfg
+sudo sed -i 's/threadirqs/threadirqs nosmt=force/g' /etc/default/grub.d/ubuntustudio.cfg
+sudo update-grub
+mkdir -p "$HOME"/.config/rncbc.org
+wget -q --show-progress -O- https://rauldipeas.com.br/uds/settings/QjackCtl.conf "$HOME"/.config/rncbc.org/
+#pw-metadata -n settings 0 clock.force-quantum 128 >/dev/null
+#pw-metadata -n settings 0 clock.force-rate 44100 >/dev/null
+#printf 'export PIPEWIRE_LATENCY="128/44100"'|sudo tee /etc/profile.d/pwjack.sh>/dev/null
+mkdir -p "$HOME"/.config/pipewire/pipewire.conf.d
+export QOPT=128
+export ROPT=44100
+envsubst <"$HOME"/.uds/settings/99-custom.conf|tee "$HOME"/.config/pipewire/pipewire.conf.d/99-custom.conf>/dev/null
+systemctl --user restart pipewire pipewire-pulse
+sudo mkdir -p /usr/local/{bin,share/applications}
+sudo wget -q --show-progress -O- https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher /usr/local/bin/
+sudo chmod +x /usr/local/bin/pipewire-latency-switcher
+sudo wget -q --show-progress -O- https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher.desktop /usr/local/share/applications/
+sudo wget -q --show-progress -O- https://rauldipeas.com.br/uds/settings/toggle-pipewire-jack /usr/local/bin/
+sudo chmod +x /usr/local/bin/toggle-pipewire-jack

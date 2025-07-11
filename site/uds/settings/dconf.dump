@@ -1,0 +1,269 @@
+[com/gexperts/Tilix/profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+login-shell=true
+terminal-bell='none'
+
+[net/launchpad/diodon/clipboard]
+add-images=true
+
+[org/gnome/TextEditor]
+highlight-current-line=true
+show-line-numbers=true
+show-map=true
+spellcheck=false
+style-scheme='kate-dark'
+wrap-text=false
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus', '9eb9b4d6-0b34-440c-92ad-7295eceb3260', 'f407f527-00e2-4928-aef8-269f56c7f1ea', '24af3937-3904-41a3-bd41-2a0fc1af5562', '1edd157d-9f3d-4590-a073-a1ea32159a1a', '1239c5c0-c87c-469b-8589-44830f17a0ab', 'd96bb7ca-78a8-4198-8f09-ee00293b2295', 'a15cacf9-23d7-44f2-ac87-1de7479f050f', '6480c7e5-fe16-459d-a6db-3d7b7cb58d60']
+
+[org/gnome/desktop/app-folders/folders/1239c5c0-c87c-469b-8589-44830f17a0ab]
+apps=['FreeFileSync.desktop', 'RealTimeSync.desktop']
+name='FreeFileSync'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/1edd157d-9f3d-4590-a073-a1ea32159a1a]
+apps=['syncthing-start.desktop', 'syncthingtray.desktop', 'syncthing-ui.desktop']
+name='Syncthing'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/24af3937-3904-41a3-bd41-2a0fc1af5562]
+apps=['com.blackmagicdesign.rawplayer.desktop', 'com.blackmagicdesign.rawspeedtest.desktop', 'com.blackmagicdesign.resolve-CaptureLogs.desktop', 'com.blackmagicdesign.resolve-Panels.desktop', 'com.blackmagicdesign.resolve.desktop', 'com.blackmagicdesign.resolve-Installer.desktop']
+name='Blackmagic'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/6480c7e5-fe16-459d-a6db-3d7b7cb58d60]
+apps=['caffeine.desktop', 'caffeine-indicator.desktop']
+name='Caffeine'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/9eb9b4d6-0b34-440c-92ad-7295eceb3260]
+apps=['pavucontrol.desktop', 'io.github.jliljebl.Flowblade.desktop', 'musescore-studio.desktop', 'com.obsproject.Studio.desktop', 'qasmixer.desktop', 'org.rncbc.qjackctl.desktop', 'rtcqs.desktop', 'Shutter_Encoder.desktop', 'com.github.ovenwerks.studio-controls.desktop', 'yabridge-sync.desktop']
+name='Studio'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['org.gnome.baobab.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.seahorse.Application.desktop', 'gnome-abrt.desktop', 'gnome-system-log.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'org.gnome.Evince.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/a15cacf9-23d7-44f2-ac87-1de7479f050f]
+apps=['FFPWA-01JZ4NKE07CPWRYZZ18WAC0X70.desktop', 'FFPWA-01JZ4P36TD0F94AY9RDPSYGPEQ.desktop', 'FFPWA-01JZ4NW6HZ0J7CTGVQ4CAXPJ2Y.desktop', 'FFPWA-01JZ4QZT1TSSQ0968PZ8EB9KZK.desktop', 'FFPWA-01JZ4PM6CXKG4XXCWZE04BWTC2.desktop', 'FFPWA-01JZ4R5V5GPHW7FQWP0DNAWKJ1.desktop', 'FFPWA-01JZ4Q9BZYXRJ7H1K0JS0HZ92R.desktop', 'FFPWA-01JZ2YCMSFXPPNA99J48N6XY5W.desktop', 'FFPWA-01JZ4NP5VAM06NX0CN0V7TCS96.desktop', 'FFPWA-01JZ4PRZ2V8ZGQSYQECPWNYBDN.desktop', 'FFPWA-01JZ2XX59ZMYZFF3ZFYX078GAJ.desktop', 'FFPWA-01JZ4PGHR1Q4HVR2V1AYSDG04M.desktop', 'FFPWA-01JZ4NEAJE0WT4HBM280GH092V.desktop', 'FFPWA-01JZ4PCX33BVX0C6XS2Q53GKWE.desktop']
+name='Firefox PWA'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/d96bb7ca-78a8-4198-8f09-ee00293b2295]
+apps=['wine-Programs-IK Product Manager.desktop', 'wine-Programs-iLok License Manager.desktop', 'wine-Programs-Ample Sound-ActivationManager.desktop', 'wine-Programs-inMusic Brands-inMusic Software Center.desktop', 'wine-Programs-Plugin Alliance-Installation Manager.desktop', 'wine-Programs-Native Access.desktop', 'wine-Programs-Steven Slate Audio Center.desktop', 'wine-Programs-IK Multimedia-MODO BASS 2.desktop', 'wine-Programs-Ample Sound-AGML vs AGM Chart.desktop', 'wine-Programs-Mercuriall Audio Software-Ampbox-Ampbox.desktop', 'wine-Programs-Mercuriall Audio Software-Ampbox-Ampbox User Guide.desktop', 'wine-Programs-Ample Sound-Ample Guitar Manual.desktop', 'wine-Programs-NoiseAsh Audio-Changelog.desktop', 'wine-Programs-Boz Digital Labs-Master Keys-Changelog.desktop', 'wine-Programs-Ample Sound-configs.desktop', 'wine-Programs-Revo Uninstaller-Desinstalar o Revo Uninstaller.desktop', 'wine-Programs-Mercuriall Audio Software-Ampbox-Eula.desktop', 'wine-Programs-Plugin Alliance-Installation Manager Uninstaller.desktop', 'wine-Programs-Boz Digital Labs-Master Keys-Master Keys.desktop', 'wine-Programs-IK Multimedia-MODO BASS 2-MODO BASS 2 User Manual.desktop', 'wine-Programs-Revo Uninstaller-Revo Uninstaller.desktop', 'wine-Programs-Revo Uninstaller-Revo Uninstaller Help.desktop', 'wine-Programs-Mercuriall Audio Software-Ampbox-Un-install Ampbox.desktop', 'wine-Programs-Ample Sound-Uninstall Ample Guitar M Lite II.desktop', 'wine-Programs-FreeQ-Uninstall FreeQ.desktop', 'wine-Programs-Boz Digital Labs-Master Keys-Uninstall Master Keys.desktop', 'wine-Programs-IK Multimedia-MODO BASS 2-Uninstall MODO BASS 2.desktop', 'wine-Programs-NoiseAsh Audio-Uninstall Palmary Action Tremolo.desktop', 'wine-Programs-Boz Digital Labs-Master Keys-User Manual.desktop', 'wine-Programs-Voxengo-Voxengo Stereo Touch-Voxengo Primary User Guide en.desktop', 'wine-Programs-Voxengo-Voxengo Stereo Touch-Voxengo Stereo Touch License Agreement.desktop', 'wine-Programs-Voxengo-Voxengo Stereo Touch-Voxengo Stereo Touch User Guide en.desktop', "wine-Programs-Voxengo-Voxengo Stereo Touch-What's New.desktop"]
+name='WINE'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/f407f527-00e2-4928-aef8-269f56c7f1ea]
+apps=['ToneLib-BassDrive.desktop', 'ToneLib-BaxEq.desktop', 'ToneLib-Detuner.desktop', 'ToneLib-DistRaptor.desktop', 'ToneLib-EasyComp.desktop', 'ToneLib-GFX.desktop', 'ToneLib-Metal.desktop', 'ToneLib-MultiComp.desktop', 'ToneLib-NoiseReducer.desktop', 'ToneLib-TubeWarmth.desktop']
+name='ToneLib'
+translate=false
+
+[org/gnome/desktop/applications/terminal]
+exec='tilix'
+
+[org/gnome/desktop/interface]
+cursor-theme='Bibata-Modern-Ice'
+icon-theme='Papirus-Dark'
+
+[org/gnome/desktop/peripherals/touchpad]
+speed=0.25196850393700787
+
+[org/gnome/desktop/screensaver]
+picture-options='zoom'
+picture-uri='file:///home/rauldipeas/.config/variety/wallpaper/wallpaper-clock-a4f793dc746a4301cc18a76c067e4416.jpg'
+
+[org/gnome/mutter]
+center-new-windows=true
+experimental-features=['scale-monitor-framebuffer']
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='small-plus'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-temperature=uint32 3700
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Alt><Super>v'
+command='diodon'
+name='Diodon'
+
+[org/gnome/shell]
+app-picker-layout=[{'yelp.desktop': <{'position': <0>}>, 'gnome-session-properties.desktop': <{'position': <1>}>, 'update-manager.desktop': <{'position': <2>}>, '24af3937-3904-41a3-bd41-2a0fc1af5562': <{'position': <3>}>, '6480c7e5-fe16-459d-a6db-3d7b7cb58d60': <{'position': <4>}>, 'org.gnome.Calculator.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>, 'diodon.desktop': <{'position': <7>}>, 'software-properties-drivers.desktop': <{'position': <8>}>, 'org.gnome.TextEditor.desktop': <{'position': <9>}>, 'enteauth.desktop': <{'position': <10>}>, 'org.gnome.PowerStats.desktop': <{'position': <11>}>, 'org.gnome.Extensions.desktop': <{'position': <12>}>, 'a15cacf9-23d7-44f2-ac87-1de7479f050f': <{'position': <13>}>, '1239c5c0-c87c-469b-8589-44830f17a0ab': <{'position': <14>}>, 'synaptic.desktop': <{'position': <15>}>, 'display-im6.q16.desktop': <{'position': <16>}>, 'iriunwebcam.desktop': <{'position': <17>}>, 'keybase.desktop': <{'position': <18>}>, 'megasync.desktop': <{'position': <19>}>, 'micro.desktop': <{'position': <20>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <21>}>, 'obsidian.desktop': <{'position': <22>}>, 'org.gnome.Software.desktop': <{'position': <23>}>}, {'software-properties-gtk.desktop': <{'position': <0>}>, 'proton-pass.desktop': <{'position': <1>}>, 'q4wine.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'vlc.desktop': <{'position': <4>}>, 'rustdesk.desktop': <{'position': <5>}>, 'smartcode-stremio.desktop': <{'position': <6>}>, '9eb9b4d6-0b34-440c-92ad-7295eceb3260': <{'position': <7>}>, 'gnome-language-selector.desktop': <{'position': <8>}>, '1edd157d-9f3d-4590-a073-a1ea32159a1a': <{'position': <9>}>, 'f407f527-00e2-4928-aef8-269f56c7f1ea': <{'position': <10>}>, 'Utilities': <{'position': <11>}>, 'variety.desktop': <{'position': <12>}>, 'code.desktop': <{'position': <13>}>, 'org.gnome.eog.desktop': <{'position': <14>}>, 'd96bb7ca-78a8-4198-8f09-ee00293b2295': <{'position': <15>}>, 'winetricks.desktop': <{'position': <16>}>}]
+command-history=['r', 'lg']
+disable-user-extensions=false
+disabled-extensions=['ubuntu-dock@ubuntu.com', 'pop-shell@system76.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'moveclock@kuvaus.org']
+enabled-extensions=['ding@rastersoft.com', 'tiling-assistant@ubuntu.com', 'center-area-horizontal-spacing-fixed@trblwlf.tk', 'icon-area-horizontal-spacing-fixed@trblwlf.tk', 'status-area-horizontal-spacing@mathematical.coffee.gmail.com', 'icon-area-horizontal-spacing@kirby_33@hotmail.fr', 'aztaskbar@aztaskbar.gitlab.com', 'blur-my-shell@aunetx', 'clipboard-indicator@tudmotu.com', 'ubuntu-appindicators@ubuntu.com', 'visualizer@sound.org', 'quicksettings-audio-devices-renamer@marcinjahn.com', 'debian-updates-indicator@glerro.pm.me', 'compiz-windows-effect@hermes83.github.com', 'impatience@gfxmonk.net', 'lgbutton@glerro.gnome.gitlab.io', 'no-titlebar-when-maximized@alec.ninja', 'rezmon@azz.lol', 'apps@github.com.howbea', 'favorite-apps@venovar.tr', 'app-hider@lynith.dev', 'show-desktop-applet@valent-in', 'AlphabeticalAppGrid@stuarthayhurst', 'appmenu-is-back@fthx', 'unity-like-appswitcher@gonza.com', 'gnome-fuzzy-app-search@gnome-shell-extensions.Czarlie.gitlab.com', 'simple-workspaces-bar@null-git']
+favorite-apps=['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'deltachat-desktop.desktop', 'rambox.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']
+last-selected-power-profile='power-saver'
+welcome-dialog-last-shown-version='46.0'
+
+[org/gnome/shell/extensions/alphabetical-app-grid]
+sort-folder-contents=false
+
+[org/gnome/shell/extensions/app-hider]
+hidden-apps=@as []
+hidden-search-apps=@as []
+
+[org/gnome/shell/extensions/aztaskbar]
+always-show-notifications=false
+clock-font-size=(false, 15)
+clock-position-in-panel='RIGHT'
+clock-position-offset=0
+favorites=true
+favorites-on-all-monitors=false
+hide-dash=true
+icon-size=26
+icon-style='REGULAR'
+indicator-location='BOTTOM'
+intellihide=false
+isolate-monitors=true
+isolate-workspaces=true
+main-panel-height=(true, 40)
+multi-window-indicator-style='MULTI_DASH'
+override-panel-clock-format=(true, '%a, %d de %b - %H∶%M')
+panel-on-all-monitors=false
+position-in-panel='LEFT'
+position-offset=1
+prefs-visible-page=''
+show-apps-button=(true, 0)
+show-panel-activities-button=false
+show-running-apps=true
+show-weather-by-clock='OFF'
+taskbar-spacing=0
+update-notifier-project-version=30
+
+[org/gnome/shell/extensions/blur-my-shell]
+settings-version=2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur=false
+brightness=0.59999999999999998
+pipeline='pipeline_default_rounded'
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-panel]
+blur-original-panel=true
+
+[org/gnome/shell/extensions/blur-my-shell/hidetopbar]
+compatibility=false
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+blur=true
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+blur=true
+brightness=0.59999999999999998
+force-light-text=false
+override-background=true
+override-background-dynamically=true
+pipeline='pipeline_default'
+sigma=30
+static-blur=true
+style-panel=0
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+pipeline='pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[org/gnome/shell/extensions/clipboard-indicator]
+display-mode=3
+
+[org/gnome/shell/extensions/dash-to-dock]
+click-action='minimize'
+show-mounts-only-mounted=true
+
+[org/gnome/shell/extensions/debian-updates-indicator]
+always-visible=false
+check-interval=1
+interval-unit=0
+last-check-date-automatic-double=1751490766525.0
+last-check-date-double=1751490766525.0
+notify=true
+output-on-terminal=true
+show-count=true
+terminal='tilix -x bash -c'
+update-cmd='topgrade -y'
+update-cmd-options=4
+
+[org/gnome/shell/extensions/ding]
+check-x11wayland=true
+show-home=false
+start-corner='top-right'
+
+[org/gnome/shell/extensions/just-perfection]
+support-notifier-showed-version=34
+
+[org/gnome/shell/extensions/moveclock]
+clock-before-statusmenu=false
+
+[org/gnome/shell/extensions/net/gfxmonk/impatience]
+speed-factor=1.0
+
+[org/gnome/shell/extensions/pop-shell]
+tile-by-default=false
+
+[org/gnome/shell/extensions/quicksettings-audio-devices-renamer]
+input-names-map={'Internal Microphone – Family 17h/19h HD Audio Controller': 'Internal Microphone – Family 17h/19h HD Audio Controller', 'Analog Input – Áudio interno': 'Analog Input – Áudio interno'}
+output-names-map={'Speakers – Family 17h/19h HD Audio Controller': 'Speakers – Family 17h/19h HD Audio Controller', 'Analog Output – Áudio interno': 'Analog Output – Áudio interno'}
+
+[org/gnome/shell/extensions/rezmon]
+b-close=')'
+b-open='('
+delimiter='|'
+
+[org/gnome/shell/extensions/show-desktop-applet]
+button-position='RIGHT-END'
+
+[org/gnome/shell/extensions/status-area-horizontal-spacing]
+hpadding=3
+
+[org/gnome/shell/extensions/tiling-assistant]
+active-window-hint-color='rgb(211,70,21)'
+last-version-installed=46
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
+
+[org/gnome/shell/extensions/venfavapps]
+position-offset=1
+right-mouse-button=3
+show-activities-button=false
+
+[org/gnome/shell/extensions/visualizer]
+fill-visualizer=false
+flip-visualizer=false
+
+[org/gnome/shell/world-clocks]
+locations=@av []

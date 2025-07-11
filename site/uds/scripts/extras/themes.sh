@@ -1,0 +1,119 @@
+#!/bin/bash
+set -e
+gei() {
+    ID="$1"
+    SHELL_VER=$(gnome-shell --version | awk '{print $3}')
+    EXT_INFO=$(wget -qO- "https://extensions.gnome.org/extension-info/?pk=$ID&shell_version=$SHELL_VER")
+
+    UUID=$(echo "$EXT_INFO" | jq -r .uuid)
+    DOWNLOAD_URL=$(echo "$EXT_INFO" | jq -r .download_url)
+
+    [ -z "$UUID" ] || [ "$DOWNLOAD_URL" = "null" ] && {
+        echo "Falha ao obter UUID ou URL. Verifique se a extensão suporta GNOME $SHELL_VER."
+        return 1
+    }
+
+    FULL_URL="https://extensions.gnome.org$DOWNLOAD_URL"
+    TMPFILE=$(mktemp)
+
+    wget -q --show-progress -O "$TMPFILE" "$FULL_URL" || {
+        echo "Falha no download."
+        return 1
+    }
+
+    gnome-extensions install -f "$TMPFILE" && \
+    echo "Extensão instalada: $UUID"
+
+    rm -f "$TMPFILE"
+}
+
+## Bibata mouse cursor
+sudo apt install -y bibata-cursor-theme dmz-cursor-theme
+sudo update-alternatives --set x-cursor-theme /usr/share/icons/DMZ-White/cursor.theme #fallback
+gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
+
+## GNOME shell
+sudo apt install -y\
+    gnome-shell-extension-alphabetical-grid\
+    gnome-shell-extension-prefs
+dconf reset -f /org/gnome/shell/extensions/appindicator
+dconf reset -f /org/gnome/shell/extensions/dash-to-dock
+dconf reset -f /org/gnome/shell/extensions/ding
+dconf reset -f /org/gnome/shell/extensions/tiling-assistant
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action minimize
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
+gsettings set org.gnome.shell.extensions.dash-to-dock show-icons-notifications-counter false
+gsettings set org.gnome.shell.extensions.ding keep-arranged true
+gsettings set org.gnome.shell.extensions.ding show-home false
+gsettings set org.gnome.shell.extensions.ding start-corner top-right
+dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
+#dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['caffeine.desktop', 'display-im6.q16.desktop', 'micro.desktop', 'RealTimeSync.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop', 'winetricks.desktop', 'diodon.desktop', 'synaptic.desktop', 'wine-Programs-Ample Sound-ActivationManager.desktop', 'wine-Programs-Mercuriall Audio Software-Ampbox-Ampbox.desktop', 'wine-Programs-Ample Sound-configs.desktop', 'wine-Programs-Boz Digital Labs-Master Keys-Master Keys.desktop', 'superpaper.desktop']"
+#dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('rambox', 'rambox-indicator', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('diodon', 'xclipboard', ''), ('qjackctl', 'ladi-starting', ''), ('rclone-browser', 'cloudstatus', '')]"
+dconf reset -f /org/gnome/shell/extensions/blur-my-shell
+dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
+dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
+dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
+dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <10>}>}>]>}}"
+dconf reset -f /org/gnome/shell/extensions/espresso
+dconf write /org/gnome/shell/extensions/espresso/enable-fullscreen false
+dconf write /org/gnome/shell/extensions/espresso/inhibit-apps "['reaper-AM.desktop', 'musescore-studio.desktop', 'gimp.desktop', 'io.github.jliljebl.Flowblade.desktop', 'com.obsproject.Studio.desktop', 'tenacity.desktop', 'Shutter_Encoder.desktop']"
+dconf write /org/gnome/shell/extensions/espresso/show-indicator false
+dconf reset -f /org/gnome/shell/extensions/hidetopbar
+dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
+dconf write /org/gnome/shell/extensions/hidetopbar/mouse-sensitive true
+dconf reset -f /org/gnome/shell/extensions/Logo-menu
+dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-image 5
+dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-size 24
+dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-terminal "'x-terminal-emulator'"
+dconf write /org/gnome/shell/extensions/Logo-menu/show-activities-button true
+dconf write /org/gnome/shell/extensions/Logo-menu/show-lockscreen true
+dconf write /org/gnome/shell/extensions/Logo-menu/show-power-options true
+dconf write /org/gnome/shell/extensions/Logo-menu/symbolic-icon true
+dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 4
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+gsettings set org.gnome.mutter center-new-windows true
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+gsettings set org.gnome.nautilus.icon-view default-zoom-level small-plus
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
+#gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'deltachat-desktop.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
+dconf reset -f /org/gnome/TextEditor
+gsettings set org.gnome.TextEditor highlight-current-line true
+gsettings set org.gnome.TextEditor show-line-numbers true
+gsettings set org.gnome.TextEditor show-map true
+gsettings set org.gnome.TextEditor spellcheck false
+gsettings set org.gnome.TextEditor wrap-text false
+gei 5895 # app-hider
+gei 3193 # blur-my-shell
+gei 4135 # espresso
+gei 545  # hide-top-bar
+gei 4451 # logo-menu
+gei 355  # status-area-horizontal-spacing
+gei 19   # user-themes
+cat <<EOF |tee "$HOME"/.local/bin/enable-extensions>/dev/null
+#!/bin/bash
+for ext in \$(gnome-extensions list); do
+  gnome-extensions enable "\$ext"
+done
+rm "\$HOME"/.config/autostart/enable-extensions.desktop "\$HOME"/.local/bin/enable-extensions
+EOF
+
+cat <<EOF |tee "$HOME"/.config/autostart/enable-extensions.desktop>/dev/null
+[Desktop Entry]
+Type=Application
+Name=Ativar extensões do GNOME
+Exec=xterm -T 'Extensões do GNOME' -fa 'Ubuntu Mono' -fs 11 -bg darkblue -fg white -e "bash $HOME/.local/bin/enable-extensions"
+Icon=org.gnome.Shell.Extensions
+Terminal=false
+Categories=System;Utility;
+StartupNotify=true
+EOF
+
+## Papirus icon theme
+sudo add-apt-repository -y ppa:papirus/papirus
+sudo apt install -y papirus-icon-theme
+gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
+papirus-folders -C paleorange
