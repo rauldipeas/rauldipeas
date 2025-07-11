@@ -14,7 +14,7 @@ INSTNAME="curl\
      p7zip\
      xterm\
      zenity"
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 #enter_tmp
 #download
 #ix_launcher

@@ -10,7 +10,7 @@ set -e
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 enter_tmp
 #download
 MEGASYNCVERSION="xUbuntu_24.04"

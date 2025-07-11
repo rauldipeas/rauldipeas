@@ -10,7 +10,7 @@ set -e
 DEPS='python3-wxgtk4.0'
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 #enter_tmp
 #download
 #fix_launcher

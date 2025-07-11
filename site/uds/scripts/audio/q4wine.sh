@@ -14,7 +14,7 @@ BASENAME2='qt5ct'
 LN2='qt5ct'
 EXEC_OLD2='qt5ct'
 EXEC_NEW2='env QT_QPA_PLATFORM=xcb qt5ct'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 #enter_tmp
 #download
 fix_launcher

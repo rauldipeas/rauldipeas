@@ -14,7 +14,7 @@ BASENAME2='realtimesync'
 LN2='RealTimeSync'
 ICON_OLD2='RealTimeSync'
 ICON_NEW2='realtimesync'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 #enter_tmp
 #download
 fix_launcher

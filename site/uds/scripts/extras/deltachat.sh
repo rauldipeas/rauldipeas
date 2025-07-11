@@ -10,7 +10,7 @@ TARGET="$(wget -qO- https://api.github.com/repos/deltachat/deltachat-desktop/rel
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 enter_tmp
 download
 #fix_launcher

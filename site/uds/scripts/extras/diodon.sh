@@ -10,7 +10,7 @@ set -e
 #DEPS=''
 #PPA=''
 INSTNAME='diodon'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh
 #enter_tmp
 #download
 #fix_launcher
