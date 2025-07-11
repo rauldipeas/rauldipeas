@@ -10,7 +10,8 @@ EXEC_NEW='env QT_QPA_PLATFORM=xcb stremio'
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+enter_tmp
 download
 fix_launcher
 wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb

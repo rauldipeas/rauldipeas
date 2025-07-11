@@ -10,7 +10,8 @@ set -e
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+enter_tmp
 #download
 MEGASYNCVERSION="xUbuntu_24.04"
 wget -q --show-progress https://mega.nz/linux/repo/"$MEGASYNCVERSION"/amd64/megasync-"$MEGASYNCVERSION"_amd64.deb

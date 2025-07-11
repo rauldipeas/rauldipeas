@@ -10,7 +10,8 @@ set -e
 #DEPS=''
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+enter_tmp
 #download
 wget -q --show-progress https://github.com/PetrusNoleto/Error-in-install-cisco-packet-tracer-in-ubuntu-23.10-unmet-dependencies/releases/download/CiscoPacketTracerFixUnmetDependenciesUbuntu23.10/libgl1-mesa-glx_23.0.4-0ubuntu1.22.04.1_amd64.deb
 # Freeware

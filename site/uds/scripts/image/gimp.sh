@@ -13,7 +13,8 @@ DEPS="libcanberra-gtk-module\
 	gtk2-engines-pixbuf"
 #PPA=''
 #INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(#fix_launcher
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+#fix_launcher
 install_deb
 mkdir -p "$HOME"/.config/GIMP/3.0
 wget -q --show-progress -O "$HOME"/.config/GIMP/3.0/gimprc https://rauldipeas.com.br/uds/settings/gimprc

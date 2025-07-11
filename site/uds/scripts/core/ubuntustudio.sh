@@ -12,7 +12,8 @@ DEPS="ubuntustudio-lowlatency-settings\
 	ubuntustudio-pipewire-config"
 PPA='savoury1/multimedia'
 INSTNAME='helvum'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh(#enter_tmp
+source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+#enter_tmp
 #download
 #fix_launcher
 sudo debconf-set-selections <<< 'jackd2 jackd/tweak_rt_limits string true'
