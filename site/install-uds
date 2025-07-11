@@ -11,4 +11,3 @@ Terminal=false
 Categories=System;Utility;
 StartupNotify=true
 EOF
-printf 'Instalação do UDS concluída!'
