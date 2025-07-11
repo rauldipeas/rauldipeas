@@ -14,8 +14,8 @@ if [ -d "\$HOME"/.local/share/wine-tkg ] ; then
     	export WINEFSYNC=1
 fi
 EOF
-echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-sudo apt install -y cabextract winetricks ttf-mscorefonts-installer
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true|sudo debconf-set-selections
+sudo apt install -y cabextract ttf-mscorefonts-installer winbind winetricks
 if [ -d "$HOME"/.wine ];then
 	rm -f "$HOME"/.wine/dosdevices/*
 	ln -fs "$HOME"/.wine/drive_c "$HOME"/.wine/dosdevices/c:
