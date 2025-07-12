@@ -17,6 +17,7 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #download
 #fix_launcher
 sudo debconf-set-selections <<< 'jackd2 jackd/tweak_rt_limits string true'
+add_ppa
 install_deb
 sudo apt autoremove --purge qmidinet
 sudo usermod -aG audio,pipewire "$USER"
