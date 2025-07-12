@@ -49,40 +49,6 @@ declare -a entries=(
 
   # Image
   "🖼️ GIMP" "image/gimp.sh" "Editor de imagem"
-
-  # Extras
-  "🌐 LibreWolf" "extras/librewolf.sh" "Navegador web"
-  "🌐 FirefoxPWA" "extras/firefoxpwa.sh" "Aplicativos progressivos da web"
-  "⬇️ FDM" "extras/freedownloadmanager.sh" "Gerenciador de downloads"
-  "🔐 Proton Pass" "extras/proton-pass.sh" "Gerenciador de senhas"
-  "🔐 Ente Auth" "extras/ente-auth.sh" "Gerador de 2FA"
-  "🔃 Timeshift" "extras/timeshift.sh" "Backup"
-  "☁️ MegaSync" "extras/megasync.sh" "Nuvem"
-  "🔃 Syncthing" "extras/syncthing.sh" "Sincronização LAN"
-  "💬 Keybase" "extras/keybase.sh" "Nuvem + chat criptografado"
-  "🗃️ FreeFileSync" "extras/freefilesync.sh" "Sincronizador de pastas"
-  "☁️ RClone" "extras/rclone.sh" "Nuvem"
-  "📬 DeltaChat" "extras/deltachat.sh" "Email/chat criptografado"
-  "💬 Rambox" "extras/rambox.sh" "Multi-mensageiro"
-  "📬 Mailspring" "extras/mailspring.sh" "Cliente de email"
-  "📺 FreeTube" "extras/freetube.sh" "Frontend para YouTube"
-  "📺 Stremio" "extras/stremio.sh" "Streaming por torrent"
-  "🎮 RetroArch" "extras/retroarch.sh" "Emulador de videogame"
-  "🖥️ Tilix" "extras/tilix.sh" "Terminal tiling"
-  "🖥️ CLI tools" "extras/cli-tools.sh" "Ferramentas de linha de comando"
-  "🖥️ VirtualBox" "extras/virtualbox.sh" "Virtualização"
-  "☎️ Rustdesk" "extras/rustdesk.sh" "Acesso remoto"
-  "📓 Obsidian" "extras/obsidian.sh" "Gerenciador de notas markdown"
-  "🖥️ VSCode" "extras/vscode.sh" "IDE para programação"
-  "🎨 Temas" "extras/themes.sh" "Temas visuais"
-  "🖼️ Superpaper" "extras/superpaper.sh" "Papel de parede em slideshow"
-  "📋 Diodon" "extras/diodon.sh" "Gerenciador da área de transferência"
-  "📆 GNOME Calendar" "extras/gnome-calendar.sh" "Calendário"
-  "🌤️ GNOME Weather" "extras/gnome-weather.sh" "Clima"
-  "📦 PeaZip" "extras/peazip.sh" "Arquivos compactados"
-  "📖 Dialect" "extras/dialect.sh" "Tradutor de texto"
-  "🎨 Folder color" "extras/folder-color.sh" "Cores nas pastas"
-  "🔧 Ubuntu Pro" "extras/ubuntu-pro.sh" "Serviços Ubuntu Pro"
 )
 
 options=()
