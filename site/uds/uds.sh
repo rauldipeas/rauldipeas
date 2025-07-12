@@ -81,6 +81,7 @@ declare -a entries=(
   "🌤️ GNOME Weather" "extras/gnome-weather.sh" "Clima"
   "📦 PeaZip" "extras/peazip.sh" "Arquivos compactados"
   "📖 Dialect" "extras/dialect.sh" "Tradutor de texto"
+  "🎨 Folder color" "extras/folder-color.sh" "Cores nas pastas"
   "🔧 Ubuntu Pro" "extras/ubuntu-pro.sh" "Serviços Ubuntu Pro"
 )
 
