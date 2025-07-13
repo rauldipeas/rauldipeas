@@ -21,7 +21,7 @@ if [ -d "$HOME"/.wine ];then
 	ln -fs "$HOME"/.wine/drive_c "$HOME"/.wine/dosdevices/c:
 	ln -fs / "$HOME"/.wine/dosdevices/z:	
 fi
-winetricks -f -q dxvk gdiplus mfc42
+winetricks -f -q dxvk mfc42
 #winetricks dwrite=disabled # (caractéres estranhos tipo árabe)
 rm -rf\
 	"$HOME"/.config/menus/applications-merged/wine*\
