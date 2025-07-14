@@ -44,8 +44,8 @@ gsettings set org.gnome.shell.extensions.ding keep-arranged true
 gsettings set org.gnome.shell.extensions.ding show-home false
 gsettings set org.gnome.shell.extensions.ding start-corner top-right
 dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
-#dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['caffeine.desktop', 'display-im6.q16.desktop', 'micro.desktop', 'RealTimeSync.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop', 'winetricks.desktop', 'diodon.desktop', 'synaptic.desktop', 'wine-Programs-Ample Sound-ActivationManager.desktop', 'wine-Programs-Mercuriall Audio Software-Ampbox-Ampbox.desktop', 'wine-Programs-Ample Sound-configs.desktop', 'wine-Programs-Boz Digital Labs-Master Keys-Master Keys.desktop', 'superpaper.desktop']"
-#dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('rambox', 'rambox-indicator', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', '')]"
+dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'RealTimeSync.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop', 'winetricks.desktop', 'diodon.desktop', 'synaptic.desktop', 'superpaper.desktop']"
+dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('rambox', 'rambox-indicator', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', '')]"
 dconf reset -f /org/gnome/shell/extensions/blur-my-shell
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
@@ -69,7 +69,7 @@ gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 gsettings set org.gnome.nautilus.icon-view default-zoom-level small-plus
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
-#gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'deltachat-desktop.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'deltachat-desktop.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
 dconf reset -f /org/gnome/TextEditor
 gsettings set org.gnome.TextEditor highlight-current-line true
 gsettings set org.gnome.TextEditor show-line-numbers true
