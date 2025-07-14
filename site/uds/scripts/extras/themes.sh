@@ -78,10 +78,12 @@ gsettings set org.gnome.TextEditor spellcheck false
 gsettings set org.gnome.TextEditor wrap-text false
 gei 5895 # app-hider
 gei 3193 # blur-my-shell
+gei 4679 # burn-my-windows
 gei 4451 # logo-menu
 gei 5940 # quick-settings-audio-panel
 gei 355  # status-area-horizontal-spacing
 gei 19   # user-themes
+gei 6343 # window-gestures
 cat <<EOF |tee "$HOME"/.local/bin/enable-extensions>/dev/null
 #!/bin/bash
 for ext in \$(gnome-extensions list); do
