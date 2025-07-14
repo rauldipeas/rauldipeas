@@ -51,10 +51,6 @@ dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-back
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
 dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <10>}>}>]>}}"
-dconf reset -f /org/gnome/shell/extensions/espresso
-dconf write /org/gnome/shell/extensions/espresso/enable-fullscreen false
-dconf write /org/gnome/shell/extensions/espresso/inhibit-apps "['reaper-AM.desktop', 'musescore-studio.desktop', 'gimp.desktop', 'io.github.jliljebl.Flowblade.desktop', 'com.obsproject.Studio.desktop', 'tenacity.desktop', 'Shutter_Encoder.desktop']"
-dconf write /org/gnome/shell/extensions/espresso/show-indicator false
 dconf reset -f /org/gnome/shell/extensions/hidetopbar
 dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
 dconf write /org/gnome/shell/extensions/hidetopbar/mouse-sensitive true
@@ -82,7 +78,6 @@ gsettings set org.gnome.TextEditor spellcheck false
 gsettings set org.gnome.TextEditor wrap-text false
 gei 5895 # app-hider
 gei 3193 # blur-my-shell
-gei 4135 # espresso
 gei 4451 # logo-menu
 gei 5940 # quick-settings-audio-panel
 gei 355  # status-area-horizontal-spacing
