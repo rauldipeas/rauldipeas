@@ -2,28 +2,22 @@
 set -e
 gei() {
     ID="$1"
-    SHELL_VER=$(gnome-shell --version | awk '{print $3}')
+    SHELL_VER=$(gnome-shell --version|awk '{print $3}')
     EXT_INFO=$(wget -qO- "https://extensions.gnome.org/extension-info/?pk=$ID&shell_version=$SHELL_VER")
-
-    UUID=$(echo "$EXT_INFO" | jq -r .uuid)
-    DOWNLOAD_URL=$(echo "$EXT_INFO" | jq -r .download_url)
-
-    [ -z "$UUID" ] || [ "$DOWNLOAD_URL" = "null" ] && {
+    UUID=$(echo "$EXT_INFO"|jq -r .uuid)
+    DOWNLOAD_URL=$(echo "$EXT_INFO"|jq -r .download_url)
+    [ -z "$UUID" ]||[ "$DOWNLOAD_URL" = "null" ] && {
         echo "Falha ao obter UUID ou URL. Verifique se a extensão suporta GNOME $SHELL_VER."
         return 1
     }
-
     FULL_URL="https://extensions.gnome.org$DOWNLOAD_URL"
     TMPFILE=$(mktemp)
-
-    wget -q --show-progress -O "$TMPFILE" "$FULL_URL" || {
+    wget -q --show-progress -O "$TMPFILE" "$FULL_URL"||{
         echo "Falha no download."
         return 1
     }
-
-    gnome-extensions install -f "$TMPFILE" && \
+    gnome-extensions install -f "$TMPFILE"&&\
     echo "Extensão instalada: $UUID"
-
     rm -f "$TMPFILE"
 }
 
