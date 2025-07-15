@@ -15,3 +15,9 @@ enter_tmp
 download
 #fix_launcher
 install_deb
+mkdir -p "$HOME"/.config/ghostty
+cat <<EOF |tee "$HOME"/.config/ghostty/config>/dev/null
+background = #000000
+background-opacity = 0.50
+font-family=Ubuntu Mono
+EOF
