@@ -51,12 +51,9 @@ dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-back
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
 dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <10>}>}>]>}}"
-dconf reset -f /org/gnome/shell/extensions/hidetopbar
-dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
-dconf write /org/gnome/shell/extensions/hidetopbar/mouse-sensitive true
 dconf reset -f /org/gnome/shell/extensions/Logo-menu
 dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-image 5
-dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-size 24
+dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-size 22
 dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-terminal "'x-terminal-emulator'"
 dconf write /org/gnome/shell/extensions/Logo-menu/show-activities-button true
 dconf write /org/gnome/shell/extensions/Logo-menu/show-lockscreen true
