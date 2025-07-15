@@ -10,8 +10,9 @@ download(){
 }
 
 fix_launcher() {
-    sudo rm -f /usr/local/share/custom-launchers/$(printf $1|cut -d '.' -f1)
-    cat <<EOF |sudo tee /usr/local/share/custom-launchers/$(printf $1|cut -d '.' -f1)>/dev/null
+    local BASENAME="$1"
+    sudo rm -f /usr/local/share/custom-launchers/$(printf $BASENAME|cut -d '.' -f1)
+    cat <<EOF |sudo tee /usr/local/share/custom-launchers/$(printf $BASENAME|cut -d '.' -f1)>/dev/null
 if [ -f /usr/share/applications/$LN.desktop ] || [ -f /usr/local/share/applications/$LN.desktop ];then
     if [ -f  /usr/share/applications/$LN.desktop ];then
         sed -i 's|Exec=$EXEC_OLD|Exec=$EXEC_NEW|g' /usr/share/applications/$LN.desktop
@@ -67,7 +68,7 @@ install_deb() {
 
 install_appimage() {
     appimage=$(sudo find /tmp -name '*.AppImage')
-    basename=$(printf $1|cut -d '.' -f1)
+    basename=$(printf $BASENAME|cut -d '.' -f1)
     chmod +x $appimage
     $appimage --appimage-extract>/dev/null
     sudo rm -rf /opt/$basename
