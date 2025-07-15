@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="obs-studio"
 LN='com.obsproject.Studio'
 #SWMC=''
 #TARGET="$()"

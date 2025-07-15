@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="iriun"
 LN='iriunwebcam'
 #SWMC=''
 TARGET="$(curl -sL https://iriun.com/|grep deb|cut -d '"' -f4)"

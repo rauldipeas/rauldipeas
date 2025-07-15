@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="syncthing"
 #LN='syncthingtray'
 #SWMC=''
 #TARGET="$()"

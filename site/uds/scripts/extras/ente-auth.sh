@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="ente-auth"
 LN='enteauth'
 SWMC='io.ente.auth'
 TARGET="$(wget -qO- https://api.github.com/repos/ente-io/ente/releases|grep browser_download_url|grep .deb|head -n1|cut -d '"' -f4)"

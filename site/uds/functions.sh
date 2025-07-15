@@ -1,6 +1,5 @@
 #!/bin/bash
 set -e
-BASENAME="${SCRIPT_BASENAME:-$(basename "$0" | cut -d '.' -f1)}"
 enter_tmp(){
     sudo find /tmp -mindepth 1 -user $USER -exec rm -rf {} +
     cd /tmp

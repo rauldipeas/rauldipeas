@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="fsearch"
 LN='io.github.cboxdoerfer.FSearch'
 #SWMC=''
 #TARGET="$()"

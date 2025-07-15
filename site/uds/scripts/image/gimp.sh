@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="gimp"
 LN='org.gimp.GIMP.Stable'
 #SWMC=''
 GIMP_VER="$(wget -qO- https://www.gimp.org/downloads|grep 'stable'|head -n1|cut -d '>' -f3|cut -d '<' -f1)"

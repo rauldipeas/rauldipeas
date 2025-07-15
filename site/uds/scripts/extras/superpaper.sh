@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-#LN=''
+w#LN=''
 #SWMC=''
 #TARGET="$()"
 #EXEC_OLD=''

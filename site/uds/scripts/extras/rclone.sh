@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="rclone"
 LN='rclone-browser'
 #SWMC=''
 TARGET="$(wget -qO- https://rclone.org/downloads|grep amd64.deb|head -n1|cut -d '"' -f4)"

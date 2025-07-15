@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="q4wine"
 LN='q4wine'
 #SWMC=''
 #TARGET="$()"

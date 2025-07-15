@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="shutter-encoder"
 LN='Shutter_Encoder'
 SWMC='application-Shutter'
 versao=$(wget -qO- 'https://www.shutterencoder.com/old%20versions/Linux/'|grep -Po 'Shutter Encoder \K[0-9]+\.[0-9]+'|sort -V | tail -1)

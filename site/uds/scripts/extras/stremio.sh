@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="stremio"
 LN='smartcode-stremio'
 #SWMC=''
 TARGET='https://dl.strem.io/shell-linux/v4.4.168/stremio_4.4.168-1_amd64.deb'

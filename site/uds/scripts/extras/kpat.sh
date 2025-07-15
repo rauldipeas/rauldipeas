@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+BASENAME="kpat"
 LN='org.kde.kpat'
 #SWMC=''
 #TARGET="$()"
