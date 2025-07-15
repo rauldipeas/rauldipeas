@@ -11,7 +11,7 @@ download(){
 
 fix_launcher() {
     sudo rm -f /usr/local/share/custom-launchers/$(basename $0|cut -d '.' -f1)
-    cat <<EOF |sudo tee /usr/local/share/custom-launchers/$($1|cut -d '.' -f1)>/dev/null
+    cat <<EOF |sudo tee /usr/local/share/custom-launchers/$(basename $0|cut -d '.' -f1)>/dev/null
 if [ -f /usr/share/applications/$LN.desktop ] || [ -f /usr/local/share/applications/$LN.desktop ];then
     if [ -f  /usr/share/applications/$LN.desktop ];then
         sed -i 's|Exec=$EXEC_OLD|Exec=$EXEC_NEW|g' /usr/share/applications/$LN.desktop
