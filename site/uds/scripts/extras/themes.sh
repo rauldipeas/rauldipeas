@@ -62,6 +62,13 @@ dconf write /org/gnome/shell/extensions/Logo-menu/show-lockscreen true
 dconf write /org/gnome/shell/extensions/Logo-menu/show-power-options true
 dconf write /org/gnome/shell/extensions/Logo-menu/symbolic-icon true
 dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 4
+dconf reset -f /org/gnome/shell/extensions/azwallpaper
+dconf write /org/gnome/shell/extensions/azwallpaper/bing-download-directory "'/home/rauldipeas/Imagens/Bing Wallpapers'"
+dconf write /org/gnome/shell/extensions/azwallpaper/bing-wallpaper-download true
+dconf write /org/gnome/shell/extensions/azwallpaper/bing-wallpaper-market "'pt-BR'"
+dconf write /org/gnome/shell/extensions/azwallpaper/bing-wallpaper-resolution "'1920x1080'"
+dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-directory "'/home/rauldipeas/Sync/Imagens/Papéis de parede'"
+dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-slide-duration "(0, 5, 0)"
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
@@ -80,6 +87,7 @@ gei 3193 # blur-my-shell
 gei 4451 # logo-menu
 gei 355  # status-area-horizontal-spacing
 gei 19   # user-themes
+gei 6281 # wallpaper-slideshow
 gei 6343 # window-gestures
 cat <<EOF |tee "$HOME"/.local/bin/enable-extensions>/dev/null
 #!/bin/bash
