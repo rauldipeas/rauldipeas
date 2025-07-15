@@ -1,17 +1,17 @@
 #!/bin/bash
 set -e
-LN='syncthingtray'
+#LN='syncthingtray'
 #SWMC=''
 #TARGET="$()"
-EXEC_OLD='syncthingtray'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb syncthingtray'
+#EXEC_OLD='syncthingtray'
+#EXEC_NEW='env QT_QPA_PLATFORM=xcb syncthingtray'
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
 #PPA=''
-INSTNAME='syncthingtray'
+INSTNAME='syncthing'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #enter_tmp
 #download
-fix_launcher
+#fix_launcher
 install_deb

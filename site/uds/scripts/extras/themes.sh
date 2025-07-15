@@ -86,6 +86,7 @@ gei 5895 # app-hider
 gei 3193 # blur-my-shell
 gei 4451 # logo-menu
 gei 355  # status-area-horizontal-spacing
+gei 7180 # syncthing-toggle
 gei 19   # user-themes
 gei 6281 # wallpaper-slideshow
 gei 6343 # window-gestures
