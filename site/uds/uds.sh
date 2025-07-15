@@ -70,8 +70,9 @@ for nome in "${sel_arr[@]}"; do
     if [[ "${entries[i]}" == "$nome" ]]; then
       script_path="${entries[i+1]}"  # <- isso estava faltando
       script_url="https://rauldipeas.com.br/uds/scripts/$script_path"
+      script_basename="$(basename "$script_path" .sh)"
       echo "Executando $nome..."
-      xterm -T "$nome" -fa 'Monospace' -fs 11 -bg darkblue -fg white -e bash -c "bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
+      xterm -T "$nome" -fa 'Monospace' -fs 11 -bg darkblue -fg white -e bash -c "SCRIPT_BASENAME='$script_basename';bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
     fi
   done
 done
