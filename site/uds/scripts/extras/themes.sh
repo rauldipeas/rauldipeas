@@ -48,7 +48,7 @@ dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16
 dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('rambox', 'rambox-indicator', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', '')]"
 dconf reset -f /org/gnome/shell/extensions/blur-my-shell
 dconf write /org/gnome/shell/extensions/blur-my-shell/applications/blur true
-dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['com.mitchellh.ghostty']"
+dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['com.mitchellh.ghostty', 'Code']"
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
