@@ -1,10 +1,11 @@
 #!/bin/bash
 set -e
-#LN=''
+BASENAME="ghostty"
+LN='com.mitchellh.ghostty'
 #SWMC=''
 TARGET="$(wget -qO- https://api.github.com/repos/mkasberg/ghostty-ubuntu/releases|grep browser_download_url|grep amd64_$(lsb_release -rs|tail -n1).deb|head -n1|cut -d '"' -f4)"
-#EXEC_OLD=''
-#EXEC_NEW=''
+EXEC_OLD='ghostty'
+EXEC_NEW='ghostty-x11'
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
@@ -13,7 +14,7 @@ TARGET="$(wget -qO- https://api.github.com/repos/mkasberg/ghostty-ubuntu/release
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
-#fix_launcher
+fix_launcher
 install_deb
 mkdir -p "$HOME"/.config/ghostty
 cat <<EOF |tee "$HOME"/.config/ghostty/config>/dev/null

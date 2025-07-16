@@ -20,7 +20,7 @@ mkdir -p "$HOME"/.config/alacritty
 cat <<EOF |tee "$HOME"/.config/alacritty/alacritty.toml>/dev/null
 [colors.primary]
 #background = "#00008b"  # darkblue
-background = "#007f20"  # fosforgreen
+background = "#00360e"  # fosforgreen
 foreground = "#ffffff"  # white
 
 [font]
