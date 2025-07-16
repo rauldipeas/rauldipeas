@@ -21,3 +21,11 @@ background = #000000
 background-opacity = 0.50
 font-family=Ubuntu Mono
 EOF
+mkdir -p "$HOME"/.local/bin
+cat <<EOF |tee "$HOME"/.local/bin/ghostty-x11>/dev/null
+#!/bin/bash
+env GDK_BACKEND=x11 ghostty
+EOF
+chmod +x "$HOME"/.local/bin/ghostty-x11
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator "$HOME"/.local/bin/ghostty-x11 50
+sudo update-alternatives --set x-terminal-emulator "$HOME"/.local/bin/ghostty-x11
