@@ -69,6 +69,7 @@ dconf write /org/gnome/shell/extensions/Logo-menu/show-lockscreen true
 dconf write /org/gnome/shell/extensions/Logo-menu/show-power-options true
 dconf write /org/gnome/shell/extensions/Logo-menu/symbolic-icon true
 dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 4
+dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back
 dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
