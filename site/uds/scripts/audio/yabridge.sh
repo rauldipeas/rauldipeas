@@ -12,7 +12,19 @@ if [ $XDG_SESSION_TYPE == wayland ];then
 	printf 'X11'
 fi
 yabridgectl sync --prune --verbose
-cat <<EOF |tee "$HOME"/.local/share/applications/yabridge-sync.desktop>/dev/null
+if command -v alacritty>/dev/null;then
+	cat <<EOF |tee "$HOME"/.local/share/applications/yabridge-sync.desktop>/dev/null
+[Desktop Entry]
+Type=Application
+Name=yabridge sync
+Exec=alacritty --title "yabridge sync" -o window.dimensions.columns=80 -o window.dimensions.lines=24 -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
+Icon=yast-addon
+Terminal=false
+Categories=System;Utility;
+StartupNotify=true
+EOF
+	else
+	cat <<EOF |tee "$HOME"/.local/share/applications/yabridge-sync.desktop>/dev/null
 [Desktop Entry]
 Type=Application
 Name=yabridge sync
@@ -22,3 +34,4 @@ Terminal=false
 Categories=System;Utility;
 StartupNotify=true
 EOF
+fi
