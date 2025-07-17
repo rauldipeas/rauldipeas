@@ -2,7 +2,7 @@
 set -e
 BASENAME="kpat"
 LN='org.kde.kpat'
-SWMC='lát'
+SWMC='kpat'
 #TARGET="$()"
 EXEC_OLD='kpat'
 EXEC_NEW='env QT_QPA_PLATFORM=xcb kpat'
