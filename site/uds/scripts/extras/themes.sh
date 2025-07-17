@@ -55,7 +55,7 @@ dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-directory "'/home/
 dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-slide-duration "(0, 5, 0)"
 dconf reset -f /org/gnome/shell/extensions/blur-my-shell
 dconf write /org/gnome/shell/extensions/blur-my-shell/applications/blur true
-dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['com.mitchellh.ghostty', 'Code']"
+dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['com.mitchellh.ghostty', 'Code', 'Alacritty']"
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
