@@ -108,7 +108,7 @@ cat <<EOF |tee "$HOME"/.config/autostart/enable-extensions.desktop>/dev/null
 [Desktop Entry]
 Type=Application
 Name=Ativar extensões do GNOME
-Exec=xterm -T 'Extensões do GNOME' -fa 'Ubuntu Mono' -fs 11 -bg darkblue -fg white -e "bash $HOME/.local/bin/enable-extensions"
+Exec=bash $HOME/.local/bin/enable-extensions
 Icon=org.gnome.Shell.Extensions
 Terminal=false
 Categories=System;Utility;
