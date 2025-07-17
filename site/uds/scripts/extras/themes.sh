@@ -44,8 +44,8 @@ gsettings set org.gnome.shell.extensions.ding keep-arranged true
 gsettings set org.gnome.shell.extensions.ding show-home false
 gsettings set org.gnome.shell.extensions.ding start-corner top-right
 dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
-dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'RealTimeSync.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop', 'winetricks.desktop', 'diodon.desktop', 'synaptic.desktop', 'superpaper.desktop']"
-dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('rambox', 'rambox-indicator', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', '')]"
+dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'winetricks.desktop', 'diodon.desktop', 'Alacritty.desktop']"
+dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', '')]"
 dconf reset -f /org/gnome/shell/extensions/azwallpaper
 dconf write /org/gnome/shell/extensions/azwallpaper/bing-download-directory "'/home/rauldipeas/Imagens/Bing Wallpapers'"
 dconf write /org/gnome/shell/extensions/azwallpaper/bing-wallpaper-download true
