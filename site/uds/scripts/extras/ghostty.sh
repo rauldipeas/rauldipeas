@@ -4,7 +4,7 @@ BASENAME="ghostty"
 LN='com.mitchellh.ghostty'
 #SWMC=''
 TARGET="$(wget -qO- https://api.github.com/repos/mkasberg/ghostty-ubuntu/releases|grep browser_download_url|grep amd64_$(lsb_release -rs|tail -n1).deb|head -n1|cut -d '"' -f4)"
-EXEC_OLD='ghostty'
+EXEC_OLD='ghostty$'
 EXEC_NEW='ghostty-x11'
 #ICON_OLD=''
 #ICON_NEW=''
@@ -18,9 +18,9 @@ fix_launcher
 install_deb
 mkdir -p "$HOME"/.config/ghostty
 cat <<EOF |tee "$HOME"/.config/ghostty/config>/dev/null
-background = #000000
+background = #00360e
 background-opacity = 0.50
-font-family=Ubuntu Mono
+font-family = Ubuntu Mono
 EOF
 mkdir -p "$HOME"/.local/bin
 cat <<EOF |tee "$HOME"/.local/bin/ghostty-x11>/dev/null
