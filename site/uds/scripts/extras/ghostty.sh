@@ -19,7 +19,7 @@ install_deb
 mkdir -p "$HOME"/.config/ghostty
 cat <<EOF |tee "$HOME"/.config/ghostty/config>/dev/null
 background = #00360e
-background-opacity = 0.50
+background-opacity = 0.75
 font-family = Ubuntu Mono
 EOF
 mkdir -p "$HOME"/.local/bin

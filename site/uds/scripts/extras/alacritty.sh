@@ -31,6 +31,6 @@ bold_italic = { family = "Ubuntu Mono", style = "Bold Italic" }
 size = 11.0
 
 [window]
-opacity = 0.6
+opacity = 0.75
 #dimensions = { columns = 80, lines = 24 }
 EOF
