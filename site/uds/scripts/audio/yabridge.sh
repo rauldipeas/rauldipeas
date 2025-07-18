@@ -18,7 +18,7 @@ if command -v alacritty>/dev/null;then
 Type=Application
 Name=yabridge sync
 Exec=alacritty --title "yabridge sync" -o window.dimensions.columns=80 -o window.dimensions.lines=24 -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=yast-addon
+Icon=airwave-manager
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true
@@ -29,7 +29,7 @@ EOF
 Type=Application
 Name=yabridge sync
 Exec=xterm -T 'yabridge sync' -fa 'Ubuntu Mono' -fs 11 -bg darkblue -fg white -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=yast-addon
+Icon=airwave-manager
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true
