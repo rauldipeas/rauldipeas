@@ -28,6 +28,7 @@ declare -a entries=(
   "🎵 ChowDSP" "audio/chowdsp.sh" "Plugins de áudio"
   "🎵 LSP plugins" "audio/lsp-plugins.sh" "Plugins de áudio"
   "🎵 NeuralRack" "audio/neuralrack.sh" "Plugin de áudio"
+  "🎵 Audio Assault" "audio/audio-assault.sh" "Plugins de áudio"
   "🎵 Sfizz" "audio/sfizz.sh" "Tocador de amostras"
   "🎵 TheMasker" "audio/themasker.sh" "Plugin de áudio"
   "🎵 ToneLib" "audio/tonelib.sh" "Plugins de áudio"
