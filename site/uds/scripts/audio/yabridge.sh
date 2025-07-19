@@ -28,7 +28,7 @@ EOF
 [Desktop Entry]
 Type=Application
 Name=yabridge sync
-Exec=xterm -T 'yabridge sync' -fa 'Ubuntu Mono' -fs 11 -bg darkblue -fg white -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
+Exec=xterm -T 'yabridge sync' -fa 'Ubuntu Mono' -fs 11 -bg "#300a25" -fg white -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
 Icon=airwave-manager
 Terminal=false
 Categories=System;Utility;

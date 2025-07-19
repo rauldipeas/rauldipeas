@@ -77,7 +77,7 @@ for nome in "${sel_arr[@]}"; do
       if command -v alacritty>/dev/null;then
         alacritty --title "$nome" -o window.dimensions.columns=80 -o window.dimensions.lines=24 -e bash -c "bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
         else
-        xterm -T "$nome" -fa 'Monospace' -fs 11 -bg darkblue -fg white -e bash -c "bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
+        xterm -T "$nome" -fa 'Monospace' -fs 11 -bg "#300a25" -fg white -e bash -c "bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
       fi
     fi
   done

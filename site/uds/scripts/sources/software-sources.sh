@@ -25,7 +25,7 @@ EOF
 [Desktop Entry]
 Type=Application
 Name=Topgrade
-Exec=xterm -T 'Topgrade' -fa 'Ubuntu Mono' -fs 11 -bg darkblue -fg white -e bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
+Exec=xterm -T 'Topgrade' -fa 'Ubuntu Mono' -fs 11 -bg "#300a25" -fg white -e bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
 Icon=update-manager
 Terminal=false
 Categories=System;Utility;
