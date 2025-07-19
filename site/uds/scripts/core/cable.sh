@@ -17,3 +17,13 @@ download
 fix_launcher
 install_deb
 sudo cp /usr/share/icons/Papirus/22x22/panel/ladi-starting.svg /usr/bin/jack-plug.svg
+mkdir -p "$HOME"/.config/autostart
+cat <<EOF |tee "$HOME"/.config/autostart/cable-autostart.desktop>/dev/null
+[Desktop Entry]
+Type=Application
+Name=Cable
+Exec=env QT_QPA_PLATFORM=xcb pw-jack cable --minimized
+Icon=jack-plug
+Terminal=false
+X-GNOME-Autostart-enabled=true
+EOF
