@@ -11,6 +11,7 @@ declare -a entries=(
   "🧠 Liquorix" "core/liquorix.sh" "Kernel"
   "📺 Drivers de vídeo" "core/video-drivers.sh" "Drivers de vídeo"
   "🎙️ Ubuntu Studio" "core/ubuntustudio.sh" "Configurações do sistema"
+  "🎛️ Cable" "core/cable.sh" "Controle do PipeWire"
   "☑️ RTCQS" "core/rtcqs.sh" "Verificador de configurações"
 
   # Sources
