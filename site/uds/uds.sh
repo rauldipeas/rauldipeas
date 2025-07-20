@@ -38,6 +38,7 @@ declare -a entries=(
   "🎵 Q4WINE" "audio/q4wine.sh" "Utilitário do WINE"
   "🎵 WINE TkG" "audio/wine-tkg.sh" "WINE + patch FSync"
   "🎵 yabridge" "audio/yabridge.sh" "Ponte WINE-VST"
+  "🎵 Easy Effects" "core/cable.sh" "Efeitos para o PipeWire"
 
   # Video
   "🎥 OBS Studio" "video/obs-studio.sh" "Transmissão/gravação"
