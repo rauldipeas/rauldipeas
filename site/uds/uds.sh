@@ -53,6 +53,7 @@ declare -a entries=(
 
   # Image
   "🖼️ GIMP" "image/gimp.sh" "Editor de imagem"
+  "🖼️ GColor 3" "image/gcolor3.sh" "Seletor de cores"
 )
 
 options=()
