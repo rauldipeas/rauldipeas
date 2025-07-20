@@ -16,3 +16,4 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #download
 #fix_launcher
 install_deb
+#easyeffects libfmt9 libgsl27 libgslcblas0 libzita-convolver4 lsp-plugins-lv2 lsp-plugins-r3d-glx mda-lv2 zam-plugins
