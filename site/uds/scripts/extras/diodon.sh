@@ -16,3 +16,4 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #fix_launcher
 install_deb
 gsettings set net.launchpad.Diodon.clipboard add-images true
+gsettings set net.launchpad.Diodon.clipboard recent-items-size 'uint32 18'

@@ -44,3 +44,8 @@ sudo chmod +x /usr/local/bin/pipewire-latency-switcher
 sudo wget -q --show-progress -O /usr/local/share/applications/pipewire-latency-switcher.desktop https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher.desktop
 sudo wget -q --show-progress -O /usr/local/bin/toggle-pipewire-jack https://rauldipeas.com.br/uds/settings/toggle-pipewire-jack
 sudo chmod +x /usr/local/bin/toggle-pipewire-jack
+mkdir -p "$HOME"/.config/nohang
+cat <<EOF |tee "$HOME"/.config/nohang/nohang.conf>/dev/null
+notify_every = 60       # intervalo entre notificações (em segundos)
+min_notify_mem = 200    # memória livre mínima antes de notificar (em MiB)
+EOF
