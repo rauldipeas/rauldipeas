@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+LANGUAGE=en pacstall -IP ffmpeg4.4
 am -i --icons reaper
 wget -q --show-progress -O /opt/reaper/libSwell.colortheme https://stash.reaper.fm/41334/libSwell.colortheme
 mkdir -p "$HOME"/.config/REAPER/{LangPack,UserPlugins}
