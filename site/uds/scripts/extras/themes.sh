@@ -72,6 +72,10 @@ dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 
 dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back
 dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true
+dconf reset -f /org/gnome/shell/extensions/window-centering
+dconf write /org/gnome/shell/extensions/window-centering/centering-keybinding "['<Alt><Shift>C']"
+dconf write /org/gnome/shell/extensions/window-centering/frame-height 93
+dconf write /org/gnome/shell/extensions/window-centering/frame-width 98
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
@@ -93,6 +97,7 @@ gei 355  # status-area-horizontal-spacing
 gei 7180 # syncthing-toggle
 gei 19   # user-themes
 gei 6281 # wallpaper-slideshow
+gei 8087 # window-centering
 gei 6343 # window-gestures
 gei 6310 # window-title-is-back
 cat <<EOF |tee "$HOME"/.local/bin/enable-extensions>/dev/null
