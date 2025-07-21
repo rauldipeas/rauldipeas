@@ -7,7 +7,8 @@ set -e
 #EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
-DEPS="ubuntustudio-lowlatency-settings\
+DEPS="nohang\
+	ubuntustudio-lowlatency-settings\
 	ubuntustudio-performance-tweaks\
 	ubuntustudio-pipewire-config"
 PPA='savoury1/multimedia'
