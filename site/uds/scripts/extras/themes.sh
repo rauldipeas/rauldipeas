@@ -73,7 +73,7 @@ dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back
 dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true
 dconf reset -f /org/gnome/shell/extensions/window-centering
-dconf write /org/gnome/shell/extensions/window-centering/centering-keybinding "['<Alt><Shift>C']"
+dconf write /org/gnome/shell/extensions/window-centering/centering-keybinding "['<Super><Shift>C']"
 dconf write /org/gnome/shell/extensions/window-centering/frame-height 93
 dconf write /org/gnome/shell/extensions/window-centering/frame-width 98
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
