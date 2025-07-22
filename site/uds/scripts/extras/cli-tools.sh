@@ -62,11 +62,12 @@ EOF
 
 ## LSD
 sudo apt install -y lsd
-cd /tmp
-rm -f /tmp/*.tar.xz
-wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Ubuntu.tar.xz
-mkdir -p "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
-tar -xf Ubuntu.tar.xz -C "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
+#cd /tmp
+#rm -f /tmp/*.tar.xz
+#wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Ubuntu.tar.xz
+#mkdir -p "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
+#tar -xf Ubuntu.tar.xz -C "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
+LANGUAGE=en pacstall -IP nerd-fonts:ttf-ubuntu-nerd
 
 ## Micro
 sudo apt install -y micro
