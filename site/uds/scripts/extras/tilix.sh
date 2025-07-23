@@ -16,3 +16,4 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #fix_launcher
 install_deb
 gsettings set org.gnome.desktop.default-applications.terminal exec tilix
+sudo update-alternatives --set x-terminal-emulator /usr/bin/tilix.wrapper
