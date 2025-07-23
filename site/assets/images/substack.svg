@@ -1,1 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 448 511.471"><path fill="#FF681A" d="M0 0h448v62.804H0V0zm0 229.083h448v282.388L223.954 385.808 0 511.471V229.083zm0-114.542h448v62.804H0v-62.804z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   shape-rendering="geometricPrecision"
+   text-rendering="geometricPrecision"
+   image-rendering="optimizeQuality"
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   viewBox="0 0 64 63.999999"
+   version="1.1"
+   id="svg188"
+   width="64"
+   height="64"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs192" />
+  <g
+     id="g353"
+     transform="matrix(0.08928571,0,0,0.09384696,12.000001,8.0000008)">
+    <path
+       fill="#ff681a"
+       d="M 0,0 H 448 V 62.804 H 0 Z M 0,229.083 H 448 V 511.471 L 223.954,385.808 0,511.471 Z M 0,114.541 h 448 v 62.804 H 0 Z"
+       id="path186" />
+  </g>
+</svg>
