@@ -3,9 +3,19 @@ set -e
 wget -qO- https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg|sudo gpg --dearmor --yes -o /usr/share/keyrings/vscodium-archive-keyring.gpg
 echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg] https://download.vscodium.com/debs vscodium main'|sudo tee /etc/apt/sources.list.d/vscodium.list>/dev/null
 sudo apt update
-sudo apt install -y codium
+sudo apt install -y codium npm
 mkdir -p "$HOME"/.config/VSCodium/User
 if [ $USER == rauldipeas ];then
+	cd /tmp
+	rm /tmp/yaru-vscode
+	git clone https://github.com/AdsonCicilioti/yaru-vscode.git
+	cd yaru-vscode
+	npm install
+	npx vsce package
+	codium --install-extension yaru-vscode-*.vsix
+	codium --install-extension ms-ceintl.vscode-language-pack-pt-br
+	codium --install-extension ms-vscode.live-server
+	codium --install-extension pkief.material-icon-theme
     cat <<EOF |tee "$HOME"/.config/VSCodium/User/settings.json>/dev/null
 {
 	"editor.fontFamily": "'Ubuntu Mono', 'monospace', monospace",
