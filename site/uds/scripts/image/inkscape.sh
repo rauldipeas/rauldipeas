@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-#BASENAME=''
-#LN=''
+BASENAME='inkscape'
+LN='org.inkscape.Inkscape'
 #SWMC=''
 #TARGET="$()"
-#EXEC_OLD=''
-#EXEC_NEW=''
+EXEC_OLD='inkscape'
+EXEC_NEW='sh -c "env GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme) inkscape"'
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
@@ -14,5 +14,5 @@ INSTNAME='inkscape'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #enter_tmp
 #download
-#fix_launcher
+fix_launcher
 install_deb
