@@ -88,8 +88,8 @@ dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true
 dconf reset -f /org/gnome/shell/extensions/window-centering/
 dconf write /org/gnome/shell/extensions/window-centering/allow-forced-resize true
 dconf write /org/gnome/shell/extensions/window-centering/centering-keybinding "['<Super><Shift>C']"
-dconf write /org/gnome/shell/extensions/window-centering/frame-height 92
-dconf write /org/gnome/shell/extensions/window-centering/frame-width 97
+dconf write /org/gnome/shell/extensions/window-centering/frame-height 88
+dconf write /org/gnome/shell/extensions/window-centering/frame-width 94
 
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
