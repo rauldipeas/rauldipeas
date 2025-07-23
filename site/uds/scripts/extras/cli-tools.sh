@@ -59,6 +59,7 @@ cat <<EOF |tee "$HOME"/.bashrc.d/liquidprompt.sh>/dev/null
 printf \$- | grep -q i 2>/dev/null && . /usr/share/liquidprompt/liquidprompt
 lp_theme powerline
 EOF
+gsettings set org.gnome.desktop.interface monospace-font-name "'Ubuntu Mono 11'"
 
 ## LSD
 sudo apt install -y lsd
@@ -67,7 +68,7 @@ sudo apt install -y lsd
 #wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Ubuntu.tar.xz
 #mkdir -p "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
 #tar -xf Ubuntu.tar.xz -C "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
-LANGUAGE=en pacstall -IP nerd-fonts:ttf-ubuntu-nerd
+LANGUAGE=en pacstall -IP nerd-fonts:ttf-ubuntu-nerd nerd-fonts:ttf-ubuntu-mono-nerd
 
 ## Micro
 sudo apt install -y micro

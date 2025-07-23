@@ -29,9 +29,8 @@ normal = { family = "Ubuntu Mono", style = "Regular" }
 bold = { family = "Ubuntu Mono", style = "Bold" }
 italic = { family = "Ubuntu Mono", style = "Italic" }
 bold_italic = { family = "Ubuntu Mono", style = "Bold Italic" }
-size = 11.0
 
-[window]
-opacity = 0.75
-#dimensions = { columns = 80, lines = 24 }
+#[window]
+#opacity = 0.75
+
 EOF

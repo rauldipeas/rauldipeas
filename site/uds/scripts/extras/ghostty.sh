@@ -20,8 +20,6 @@ mkdir -p "$HOME"/.config/ghostty
 cat <<EOF |tee "$HOME"/.config/ghostty/config>/dev/null
 background = #00360e
 background-opacity = 0.75
-font-family = Ubuntu Mono
-font-sizer = 11
 EOF
 mkdir -p "$HOME"/.local/bin
 cat <<EOF |tee "$HOME"/.local/bin/ghostty-x11>/dev/null
