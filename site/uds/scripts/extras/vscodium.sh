@@ -7,7 +7,7 @@ sudo apt install -y codium npm
 mkdir -p "$HOME"/.config/VSCodium/User
 if [ $USER == rauldipeas ];then
 	cd /tmp
-	rm /tmp/yaru-vscode
+	rm -rf /tmp/yaru-vscode
 	git clone https://github.com/AdsonCicilioti/yaru-vscode.git
 	cd yaru-vscode
 	npm install
