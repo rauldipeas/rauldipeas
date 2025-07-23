@@ -5,7 +5,7 @@ LN='org.inkscape.Inkscape'
 #SWMC=''
 #TARGET="$()"
 EXEC_OLD='inkscape'
-EXEC_NEW='sh -c "env GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme) inkscape"'
+EXEC_NEW='inkscape_theme-fix'
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
@@ -16,3 +16,9 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #download
 fix_launcher
 install_deb
+cat <<EOF |sudo tee /usr/local/bin/inkscape_theme-fix>/dev/null
+#!/bin/bash
+set -e
+env GTK_THEME=$(gsettings get org.gnome.desktop.interface gtk-theme) inkscape $@
+EOF
+sudo chmod +x /usr/local/bin/inkscape_theme-fix
