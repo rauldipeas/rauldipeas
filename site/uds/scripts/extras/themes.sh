@@ -42,12 +42,15 @@ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-show-apps-button false
 gsettings set org.gnome.shell.extensions.dash-to-dock show-icons-notifications-counter false
+
 gsettings set org.gnome.shell.extensions.ding keep-arranged true
 gsettings set org.gnome.shell.extensions.ding show-home false
 gsettings set org.gnome.shell.extensions.ding start-corner top-right
 
 dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
+
 dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'winetricks.desktop', 'diodon.desktop', 'Alacritty.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop']"
+
 dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', ''), ('Cable', 'ladi-starting', '')]"
 
 dconf reset -f /org/gnome/shell/extensions/azwallpaper/
@@ -74,7 +77,9 @@ dconf write /org/gnome/shell/extensions/Logo-menu/show-activities-button true
 dconf write /org/gnome/shell/extensions/Logo-menu/show-lockscreen true
 dconf write /org/gnome/shell/extensions/Logo-menu/show-power-options true
 dconf write /org/gnome/shell/extensions/Logo-menu/symbolic-icon true
-dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 4
+
+dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 3
+
 dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
 
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back/
@@ -87,8 +92,8 @@ dconf write /org/gnome/shell/extensions/window-centering/frame-height 92
 dconf write /org/gnome/shell/extensions/window-centering/frame-width 97
 
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
-gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.nautilus.icon-view default-zoom-level small-plus
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
