@@ -39,7 +39,7 @@ export ROPT=44100
 wget -qO- https://rauldipeas.com.br/uds/settings/99-custom.conf|envsubst|tee "$HOME"/.config/pipewire/pipewire.conf.d/99-custom.conf>/dev/null
 systemctl --user restart pipewire pipewire-pulse
 sudo mkdir -p /usr/local/{bin,share/applications}
-sudo wget -q --show-progress -O /usr/local/bin/pipewire-lantecy-switcher https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher
+sudo wget -q --show-progress -O /usr/local/bin/pipewire-latency-switcher https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher
 sudo chmod +x /usr/local/bin/pipewire-latency-switcher
 sudo wget -q --show-progress -O /usr/local/share/applications/pipewire-latency-switcher.desktop https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher.desktop
 sudo wget -q --show-progress -O /usr/local/bin/toggle-pipewire-jack https://rauldipeas.com.br/uds/settings/toggle-pipewire-jack
