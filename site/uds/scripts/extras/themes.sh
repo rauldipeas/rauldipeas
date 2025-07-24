@@ -51,7 +51,7 @@ dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-conten
 
 dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'winetricks.desktop', 'diodon.desktop', 'Alacritty.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop']"
 
-dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('deltachat-desktop', 'deltachat-tray', ''), ('superpaper', 'preferences-desktop-display-randr', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', ''), ('Cable', 'ladi-starting', '')]"
+dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', ''), ('Cable', 'ladi-starting', '')]"
 
 dconf reset -f /org/gnome/shell/extensions/azwallpaper/
 dconf write /org/gnome/shell/extensions/azwallpaper/bing-download-directory "'/home/rauldipeas/Imagens/Bing Wallpapers'"
@@ -63,7 +63,7 @@ dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-slide-duration "(0
 
 dconf reset -f /org/gnome/shell/extensions/blur-my-shell/
 dconf write /org/gnome/shell/extensions/blur-my-shell/applications/blur true
-dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['com.mitchellh.ghostty', 'Code', 'Alacritty', 'org.telegram.desktop', 'tilix']"
+dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['Alacritty', 'tilix']"
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
@@ -97,7 +97,7 @@ gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.nautilus.icon-view default-zoom-level small-plus
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'deltachat-desktop.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
+gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'rambox.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
 
 #dconf reset -f /org/gnome/TextEditor/
 #gsettings set org.gnome.TextEditor highlight-current-line true
