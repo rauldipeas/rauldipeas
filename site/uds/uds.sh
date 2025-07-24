@@ -27,6 +27,7 @@ declare -a entries=(
   "🎵 ArtV" "audio/artv.sh" "Plugins de áudio"
   "🎵 Auburn Sounds" "audio/auburnsounds.sh" "Plugins de áudio"
   "🎵 ChowDSP" "audio/chowdsp.sh" "Plugins de áudio"
+  "🎵 Aether" "audio/aether.sh" "Plugin de áudio"
   "🎵 LSP plugins" "audio/lsp-plugins.sh" "Plugins de áudio"
   "🎵 NeuralRack" "audio/neuralrack.sh" "Plugin de áudio"
   "🎵 Audio Assault" "audio/audio-assault.sh" "Plugins de áudio"
