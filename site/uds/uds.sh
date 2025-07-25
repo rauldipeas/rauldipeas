@@ -35,6 +35,7 @@ declare -a entries=(
   "🎵 TheMasker" "audio/themasker.sh" "Plugin de áudio"
   "🎵 ToneLib" "audio/tonelib.sh" "Plugins de áudio"
   "🎵 ZL Audio" "audio/zl-audio.sh" "Plugins de áudio"
+  "🎵 VZtec" "audio/vztec.sh" "Plugins de áudio"
   "🎵 MX Tune" "audio/mx-tune.sh" "Plugin de áudio"
   "🎵 Q4WINE" "audio/q4wine.sh" "Utilitário do WINE"
   "🎵 WINE TkG" "audio/wine-tkg.sh" "WINE + patch FSync"
