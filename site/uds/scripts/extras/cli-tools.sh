@@ -72,3 +72,7 @@ LANGUAGE=en pacstall -IP nerd-fonts:ttf-ubuntu-nerd nerd-fonts:ttf-ubuntu-mono-n
 
 ## Micro
 sudo apt install -y micro
+
+## ntfy
+pipx install --force ntfy --system-site-packages
+printf 'eval "$(ntfy shell-integration)"'|tee "$HOME"/.bashrc.d/ntfy.sh
