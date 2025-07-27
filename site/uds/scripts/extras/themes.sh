@@ -108,6 +108,7 @@ gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'lib
 
 gei 5895 # app-hider
 gei 3193 # blur-my-shell
+gei 5410 # grand-theft-focus
 gei 1319 # gsconnect
 gei 4451 # logo-menu
 gei 355  # status-area-horizontal-spacing
