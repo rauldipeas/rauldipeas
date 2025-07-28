@@ -99,6 +99,14 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
 gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'rambox.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
 
+dconf reset -f /org/gnome/terminal/
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ audible-bell false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ use-theme-transparency false
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ use-transparent-background true
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ background-color '#00360e'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ foreground-color '#ffffff'
+gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ use-theme-colors false
+
 #dconf reset -f /org/gnome/TextEditor/
 #gsettings set org.gnome.TextEditor highlight-current-line true
 #gsettings set org.gnome.TextEditor show-line-numbers true

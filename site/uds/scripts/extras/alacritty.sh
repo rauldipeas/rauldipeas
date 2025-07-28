@@ -32,5 +32,4 @@ bold_italic = { family = "Ubuntu Mono", style = "Bold Italic" }
 
 #[window]
 #opacity = 0.75
-
 EOF
