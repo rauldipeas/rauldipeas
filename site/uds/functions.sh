@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 enter_tmp(){
-    sudo find /tmp -mindepth 1 -user $USER -exec rm -rf {} +
+    sudo find /tmp -mindepth 1 -user $USER -not -path "/tmp/.veracrypt*" -exec rm -rf {} +
     cd /tmp
 }
 
