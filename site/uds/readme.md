@@ -1,5 +1,7 @@
 # Ubuntu Derivatives Studio (Estúdio nos derivados do Ubuntu)
 
+![](screenshot.png)
+
 Este é um script que tem como objetivo configurar o Ubuntu e seus derivados pra trabalhar com criação de conteúdo multimídia, com foco especial no áudio em baixíssima latência.
 
 Além dessas configurações, o script também instala diversos programas relacionados com configurações específicas pra otimizar o desempenho e a usabilidade.
@@ -19,7 +21,7 @@ Pra instalar o script é só rodar o comando abaixo:
 bash <(wget -qO- https://rauldipeas.com.br/install-uds)
 ```
 
-Se tudo correr como esperado, _**o terminal não vai dar nenhuma saída**_, porém, vai aparecer um lançador novo nos seus aplicativos, chamado **Pós instação do Ubuntu (Estúdio)**.
+Se tudo correr como esperado, vai aparecer um lançador novo nos seus aplicativos, chamado **Pós instação do Ubuntu (Estúdio)**.
 
 Após abrir o aplicativo e selecionar os ítens que quer instalar, cada ítem será executado num terminal individual, na maioria deles você vai precisar inserir a senha de administrador _(`sudo`)_.
 
