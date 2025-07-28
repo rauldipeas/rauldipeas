@@ -13,12 +13,12 @@ rm -f /tmp/*.deb
 wget -q --show-progress "$(wget -qO- https://api.github.com/repos/topgrade-rs/topgrade/releases|grep browser_download_url|grep deb|head -n1|cut -d '"' -f4)"
 sudo apt install -y ./topgrade*.deb
 mkdir -p "$HOME"/.local/share/applications
-if command -v alacritty>/dev/null;then
+if command -v gnome-terminal>/dev/null;then
 	cat <<EOF |tee "$HOME"/.local/share/applications/topgrade.desktop>/dev/null
 [Desktop Entry]
 Type=Application
 Name=Topgrade
-Exec=alacritty --title 'Topgrade' -o window.dimensions.columns=80 -o window.dimensions.lines=24 -e bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
+Exec=gnome-terminal --title="Topgrade" --geometry=80x24 -- bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
 Icon=update-manager
 Terminal=false
 Categories=System;Utility;

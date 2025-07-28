@@ -49,7 +49,7 @@ gsettings set org.gnome.shell.extensions.ding start-corner top-right
 
 dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
 
-dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'winetricks.desktop', 'diodon.desktop', 'Alacritty.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop']"
+dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'winetricks.desktop', 'diodon.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop']"
 
 dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', ''), ('Cable', 'ladi-starting', '')]"
 
@@ -63,7 +63,7 @@ dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-slide-duration "(0
 
 dconf reset -f /org/gnome/shell/extensions/blur-my-shell/
 dconf write /org/gnome/shell/extensions/blur-my-shell/applications/blur true
-dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['Alacritty', 'tilix']"
+dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['gnome-terminal-server']"
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true

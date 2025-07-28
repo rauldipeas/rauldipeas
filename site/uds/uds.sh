@@ -73,20 +73,23 @@ selected=$(zenity --list --checklist \
 [[ -z "$selected" ]] && exit
 
 IFS="|" read -ra sel_arr <<< "$selected"
+
+comando=""
 for nome in "${sel_arr[@]}"; do
-  # buscar o caminho correspondente
   for ((i=0; i<${#entries[@]}; i+=3)); do
     if [[ "${entries[i]}" == "$nome" ]]; then
-      script_path="${entries[i+1]}"  # <- isso estava faltando
+      script_path="${entries[i+1]}"
       script_url="https://rauldipeas.com.br/uds/scripts/$script_path"
-      echo "Executando $nome..."
-      if command -v alacritty>/dev/null;then
-        alacritty --title "$nome" -o window.dimensions.columns=80 -o window.dimensions.lines=24 -e bash -c "bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
-        else
-        xterm -T "$nome" -fa 'Ubuntu Mono' -fs 11 -bg "#300a25" -fg white -e bash -c "bash <(wget -qO- '$script_url'); echo 'Pressione qualquer tecla para fechar...'; read -n1"
-      fi
+      comando+="echo 'Executando $nome...'; bash <(wget -qO- '$script_url'); echo; read -n1 -s -r -p 'Pressione qualquer tecla para continuar...'; clear;"
     fi
   done
 done
 
-#zenity --question --text="Deseja reiniciar agora?" && sudo shutdown -r now
+comando+="echo 'Todos os scripts foram executados.'; read -n1 -s -r -p 'Pressione qualquer tecla para fechar...';"
+
+if command -v gnome-terminal &>/dev/null; then
+  gnome-terminal -- bash -c "$comando"
+else
+  xterm -T "Instalação sequencial" -fa 'Ubuntu Mono' -fs 11 \
+    -bg "#300a25" -fg white -e bash -c "$comando"
+fi

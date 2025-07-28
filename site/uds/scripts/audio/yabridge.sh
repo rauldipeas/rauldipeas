@@ -12,12 +12,12 @@ if [ $XDG_SESSION_TYPE == wayland ];then
 	printf 'X11'
 fi
 yabridgectl sync --prune --verbose
-if command -v alacritty>/dev/null;then
+if command -v gnome-terminal>/dev/null;then
 	cat <<EOF |tee "$HOME"/.local/share/applications/yabridge-sync.desktop>/dev/null
 [Desktop Entry]
 Type=Application
 Name=yabridge sync
-Exec=alacritty --title "yabridge sync" -o window.dimensions.columns=80 -o window.dimensions.lines=24 -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
+Exec=gnome-terminal --title="yabridge sync" --geometry=80x24 -- bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
 Icon=airwave-manager
 Terminal=false
 Categories=System;Utility;

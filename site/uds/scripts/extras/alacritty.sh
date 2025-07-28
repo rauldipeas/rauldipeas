@@ -15,7 +15,7 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #download
 #fix_launcher
 install_deb
-#gsettings set org.gnome.desktop.default-applications.terminal exec alacrity
+#gsettings set org.gnome.desktop.default-applications.terminal exec alacritty
 mkdir -p "$HOME"/.config/alacritty
 cat <<EOF |tee "$HOME"/.config/alacritty/alacritty.toml>/dev/null
 [colors.primary]
