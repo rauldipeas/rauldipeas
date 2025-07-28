@@ -36,3 +36,36 @@ Categories=System;Utility;
 StartupNotify=true
 EOF
 fi
+
+mkdir -p "$HOME"/.local/bin
+cat <<EOF |tee "$HOME"/.local/bin/search-app>/dev/null
+#!/bin/bash
+
+# Cores
+YELLOW="\033[1;33m"
+GREEN="\033[0;32m"
+NC="\033[0m" # Reset
+
+if [ -z "\$1" ]; then
+  echo -e "\${YELLOW}Uso: \$0 nome_do_programa\${NC}"
+  exit 1
+fi
+
+prog="\$1"
+echo -e "🔍 Procurando por: \${GREEN}\$prog\${NC}"
+
+echo -e "\n📦 \${YELLOW}APT\${NC}:"
+apt-cache pkgnames | grep -i "^\$prog" | while read -r pkg; do
+  version=\$(apt-cache show "\$pkg" 2>/dev/null | grep -m1 '^Version:' | awk '{print \$2}')
+  echo -e "\${GREEN}\$pkg\${NC} - versão: \$version"
+done || echo -e "\${GREEN}Nenhum resultado.\${NC}"
+
+echo -e "\n📦 \${YELLOW}AM\${NC}:"
+am_result=\$(am -q "\$prog" 2>/dev/null | grep -i "\$prog")
+[[ -n "\$am_result" ]] && echo -e "\${am_result}" || echo -e "\${GREEN}Nenhum resultado.\${NC}"
+
+echo -e "\n📦 \${YELLOW}Pacstall\${NC}:"
+pac_result=\$(pacstall -S "\$prog" 2>/dev/null | grep -i "\$prog")
+[[ -n "\$pac_result" ]] && echo -e "\${pac_result}" || echo -e "\${GREEN}Nenhum resultado.\${NC}"
+EOF
+chmod +x "$HOME"/.local/bin/search-app
