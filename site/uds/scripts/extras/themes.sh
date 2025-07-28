@@ -49,9 +49,27 @@ gsettings set org.gnome.shell.extensions.ding start-corner top-right
 
 dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
 
-dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "['display-im6.q16.desktop', 'micro.desktop', 'syncthing-start.desktop', 'syncthing-ui.desktop', 'winetricks.desktop', 'diodon.desktop', 'debian-uxterm.desktop', 'debian-xterm.desktop']"
+dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "[\
+    'debian-uxterm.desktop',\
+    'debian-xterm.desktop',\
+    'diodon.desktop',\
+    'display-im6.q16.desktop',\
+    'micro.desktop',\
+    'syncthing-start.desktop',\
+    'syncthing-ui.desktop',\
+    'winetricks.desktop'\
+]"
 
-dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[('vlc', 'vlc-panel', ''), ('Diodon', 'notes-panel', ''), ('QjackCtl', 'gnome-device-manager', ''), ('rclone-browser', 'cloudstatus', ''), ('2wydifuftb', 'gtk-dialog-authentication-panel', ''), ('un-reboot', 'system-reboot-symbolic', ''), ('q4wine', 'folder-white-wine', ''), ('Cable', 'ladi-starting', '')]"
+dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
+    ('2wydifuftb', 'gtk-dialog-authentication-panel', ''),\
+    ('Cable', 'ladi-starting', ''),\
+    ('Diodon', 'notes-panel', ''),\
+    ('q4wine', 'folder-white-wine', ''),\
+    ('QjackCtl', 'gnome-device-manager', ''),\
+    ('rclone-browser', 'cloudstatus', ''),\
+    ('un-reboot', 'system-reboot-symbolic', ''),\
+    ('vlc', 'vlc-panel', '')\
+]"
 
 dconf reset -f /org/gnome/shell/extensions/azwallpaper/
 dconf write /org/gnome/shell/extensions/azwallpaper/bing-download-directory "'/home/rauldipeas/Imagens/Bing Wallpapers'"
@@ -67,7 +85,41 @@ dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
 dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
 dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
-dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <10>}>}>]>}}"
+dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{\
+    'pipeline_default': {\
+        'name': <'Default'>,\
+        'effects': <[\
+            <{\
+                'type': <'native_static_gaussian_blur'>,\
+                'id': <'effect_000000000000'>,\
+                'params': <{\
+                    'radius': <30>,\
+                    'brightness': <0.59999999999999998>\
+                }>\
+            }>\
+        ]>\
+    },\
+    'pipeline_default_rounded': {\
+        'name': <'Default rounded'>,\
+        'effects': <[\
+            <{\
+                'type': <'native_static_gaussian_blur'>,\
+                'id': <'effect_000000000001'>,\
+                'params': <{\
+                    'radius': <30>,\
+                    'brightness': <0.59999999999999998>\
+                }>\
+            }>,\
+            <{\
+                'type': <'corner'>,\
+                'id': <'effect_000000000002'>,\
+                'params': <{\
+                    'radius': <10>\
+                }>\
+            }>\
+        ]>\
+    }\
+}"
 
 dconf reset -f /org/gnome/shell/extensions/Logo-menu/
 dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-image 5
@@ -97,7 +149,15 @@ gsettings set org.gnome.mutter center-new-windows true
 gsettings set org.gnome.nautilus.icon-view default-zoom-level small-plus
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'uint32 3700'
-gsettings set org.gnome.shell favorite-apps "['org.gnome.Nautilus.desktop', 'librewolf.desktop', 'rambox.desktop', 'reaper-AM.desktop', 'com.blackmagicdesign.resolve.desktop', 'gimp.desktop', 'freetube.desktop']"
+gsettings set org.gnome.shell favorite-apps "[\
+    'org.gnome.Nautilus.desktop',\
+    'librewolf.desktop',\
+    'rambox.desktop',\
+    'reaper-AM.desktop',\
+    'com.blackmagicdesign.resolve.desktop',\
+    'gimp.desktop',\
+    'freetube.desktop'\
+]"
 
 dconf reset -f /org/gnome/terminal/
 gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ audible-bell false
