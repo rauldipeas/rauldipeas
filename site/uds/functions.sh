@@ -61,12 +61,12 @@ install_deb() {
     if [ -n "$INSTNAME" ];then
         sudo apt install -y $INSTNAME
         else
-        sudo apt install -y $(sudo find /tmp -name '*.deb')
+        sudo apt install -y $(sudo find /tmp -type f -name '*.deb')
     fi
 }
 
 install_appimage() {
-    appimage=$(sudo find /tmp -name '*.AppImage')
+    appimage=$(sudo find /tmp -type f -name '*.AppImage')
     basename=$BASENAME
     chmod +x $appimage
     $appimage --appimage-extract>/dev/null
