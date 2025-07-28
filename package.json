@@ -1,0 +1,26 @@
+{
+  "name": "uds",
+  "version": "1.0.0",
+  "main": "site/uds/src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --linux deb"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.ubuntu.postinstall",
+    "productName": "Pós-instalação do Ubuntu (Estúdio)",
+    "directories": {
+      "output": "dist"
+    },
+    "linux": {
+      "target": "deb",
+      "category": "Utility",
+      "icon": "site/uds/package-manager-icon.svg",
+      "maintainer": "Raul Dipeas <rauldipeas@disroot.org>"
+    }
+  }
+}

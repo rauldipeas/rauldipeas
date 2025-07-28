@@ -1,5 +1,7 @@
+.jekyll-cache
 blog/_site
+dist
+Gemfile.lock
+node_modules
 social/_site
 social/.sass-cache
-Gemfile.lock
-.jekyll-cache
