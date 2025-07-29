@@ -13,6 +13,7 @@ function createWindow() {
 
   win.setMenu(null);
   win.loadURL('https://rauldipeas.com.br/uds/src/index.html'); // substitua pela URL desejada
+  // win.loadFile('site/uds/src/index.html');
 
   win.webContents.on('before-input-event', (event, input) => {
     if (input.control && input.key.toLowerCase() === 'q') {
