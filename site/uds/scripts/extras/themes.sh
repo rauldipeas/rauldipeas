@@ -72,6 +72,7 @@ dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
     ('q4wine', 'folder-white-wine', ''),\
     ('QjackCtl', 'gnome-device-manager', ''),\
     ('rclone-browser', 'cloudstatus', ''),\
+    ('TelegramDesktop', 'telegram-panel', 'telegram-attention-panel'),\
     ('un-reboot', 'system-reboot-symbolic', ''),\
     ('vlc', 'vlc-panel', '')\
 ]"
