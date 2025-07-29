@@ -160,8 +160,6 @@ dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 
 
 dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
 
-dconf reset -f /org/gnome/shell/extensions/vitals/
-
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back/
 dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true
 
@@ -212,7 +210,6 @@ gei 7048 # rounded-window-corners-reborn
 gei 355  # status-area-horizontal-spacing
 gei 7180 # syncthing-toggle
 gei 19   # user-themes
-gei 1460 # vitals
 gei 6281 # wallpaper-slideshow
 gei 8087 # window-centering
 gei 6343 # window-gestures
