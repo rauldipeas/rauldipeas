@@ -135,9 +135,14 @@ dconf write /org/gnome/shell/extensions/Logo-menu/show-lockscreen true
 dconf write /org/gnome/shell/extensions/Logo-menu/show-power-options true
 dconf write /org/gnome/shell/extensions/Logo-menu/symbolic-icon true
 
+dconf reset -f /org/gnome/shell/extensions/rounded-window-corners-reborn/
+dconf write /org/gnome/shell/extensions/rounded-window-corners-reborn/blacklist "['gnome-terminal-server']"
+
 dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 3
 
 dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
+
+dconf reset -f /org/gnome/shell/extensions/vitals/
 
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back/
 dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true
@@ -185,9 +190,11 @@ gei 3193 # blur-my-shell
 gei 5410 # grand-theft-focus
 gei 1319 # gsconnect
 gei 4451 # logo-menu
+gei 7048 # rounded-window-corners-reborn
 gei 355  # status-area-horizontal-spacing
 gei 7180 # syncthing-toggle
 gei 19   # user-themes
+gei 1460 # vitals
 gei 6281 # wallpaper-slideshow
 gei 8087 # window-centering
 gei 6343 # window-gestures
