@@ -6,12 +6,10 @@ gei() {
   EXT_INFO=$(wget -qO- "https://extensions.gnome.org/extension-info/?pk=$ID&shell_version=$SHELL_VER")
   UUID=$(echo "$EXT_INFO" | jq -r .uuid)
   DOWNLOAD_URL=$(echo "$EXT_INFO" | jq -r .download_url)
-  
   if [ -z "$UUID" ] || [ "$DOWNLOAD_URL" = "null" ]; then
     echo "Falha ao obter UUID ou URL. Verifique se a extensão suporta GNOME $SHELL_VER."
     return 1
   fi
-
   FULL_URL="https://extensions.gnome.org$DOWNLOAD_URL"
   TMPFILE=$(mktemp)
   if ! wget -q --show-progress -O "$TMPFILE" "$FULL_URL"; then
@@ -19,7 +17,6 @@ gei() {
     rm -f "$TMPFILE"
     return 1
   fi
-
   gnome-extensions install -f "$TMPFILE" && echo "Extensão instalada: $UUID"
   rm -f "$TMPFILE"
 }
