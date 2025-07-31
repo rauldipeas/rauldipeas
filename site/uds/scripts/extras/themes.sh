@@ -74,6 +74,7 @@ dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
     ('rclone-browser', 'cloudstatus', ''),\
     ('TelegramDesktop', 'telegram-panel', 'telegram-attention-panel'),\
     ('un-reboot', 'system-reboot-symbolic', ''),\
+    ('veracrypt', 'veracrypt-panel', '')\
     ('vlc', 'vlc-panel', '')\
 ]"
 
