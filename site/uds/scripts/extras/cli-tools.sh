@@ -27,26 +27,26 @@ source -- "$HOME"/.local/share/blesh/ble.sh
 EOF
 cat <<EOF |tee "$HOME"/.blerc>/dev/null
 # desabilita syntax highlighting
-#bleopt highlight_syntax=
+bleopt highlight_syntax=
 # desabilita highlighting baseado em filenames
-#bleopt highlight_filename=
+bleopt highlight_filename=
 # desabilita highlighting baseado em tipos de variável
-#bleopt highlight_variable=
+bleopt highlight_variable=
 # desabilita ambiguous completion
-#bleopt complete_ambiguous=
+bleopt complete_ambiguous=
 # desabilita menu-complete com TAB
-#bleopt complete_menu_complete=
+bleopt complete_menu_complete=
 # desabilita menu filtering (ex.: sugerir arquivos)
-#bleopt complete_menu_filter=
+bleopt complete_menu_filter=
 # desabilita marcador de EOF (ex.: "[ble: EOF]")
-#bleopt prompt_eol_mark=''
+bleopt prompt_eol_mark=''
 # desabilita marcador de erro (ex.: "[ble: exit %d]")
-#bleopt exec_errexit_mark=
+bleopt exec_errexit_mark=
 # desabilita marcador de exit (ex.: "[ble: exit]")
-#bleopt exec_exit_mark=
+bleopt exec_exit_mark=
 # desabilita outros marcadores (ex.: "[ble: ...]")
-#bleopt edit_marker=
-#bleopt edit_marker_error=
+bleopt edit_marker=
+bleopt edit_marker_error=
 # deixa o auto-complete com uma cor mais sútil
 ble-face auto_complete='fg=240,underline,italic'
 EOF
