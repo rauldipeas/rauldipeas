@@ -16,8 +16,10 @@ EOF
 sudo apt install -y bat #batcat
 
 ## Ble.sh
-git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh.git
-make -C ble.sh install PREFIX=~/.local
+cd /tmp
+rm -rf /tmp/ble.sh
+git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh
+make -C ble.sh install PREFIX="$HOME"/.local
 cat <<EOF |tee "$HOME"/.bashrc.d/ble.sh>/dev/null
 #source "$HOME"/.local/share/blesh/ble.sh --noattach
 #[[ ! \${BLE_VERSION-} ]] || ble-attach

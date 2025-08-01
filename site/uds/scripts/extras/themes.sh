@@ -86,47 +86,47 @@ dconf write /org/gnome/shell/extensions/azwallpaper/bing-wallpaper-resolution "'
 dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-directory "'/home/rauldipeas/Sync/Imagens/Papéis de parede'"
 dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-slide-duration "(0, 5, 0)"
 
-dconf reset -f /org/gnome/shell/extensions/blur-my-shell/
-dconf write /org/gnome/shell/extensions/blur-my-shell/applications/blur true
-dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['gnome-terminal-server']"
-dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
-dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
-dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
-dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{\
-    'pipeline_default': {\
-        'name': <'Default'>,\
-        'effects': <[\
-            <{\
-                'type': <'native_static_gaussian_blur'>,\
-                'id': <'effect_000000000000'>,\
-                'params': <{\
-                    'radius': <30>,\
-                    'brightness': <0.59999999999999998>\
-                }>\
-            }>\
-        ]>\
-    },\
-    'pipeline_default_rounded': {\
-        'name': <'Default rounded'>,\
-        'effects': <[\
-            <{\
-                'type': <'native_static_gaussian_blur'>,\
-                'id': <'effect_000000000001'>,\
-                'params': <{\
-                    'radius': <30>,\
-                    'brightness': <0.59999999999999998>\
-                }>\
-            }>,\
-            <{\
-                'type': <'corner'>,\
-                'id': <'effect_000000000002'>,\
-                'params': <{\
-                    'radius': <10>\
-                }>\
-            }>\
-        ]>\
-    }\
-}"
+#dconf reset -f /org/gnome/shell/extensions/blur-my-shell/
+#dconf write /org/gnome/shell/extensions/blur-my-shell/applications/blur true
+#dconf write /org/gnome/shell/extensions/blur-my-shell/applications/whitelist "['gnome-terminal-server']"
+#dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/override-background true
+#dconf write /org/gnome/shell/extensions/blur-my-shell/dash-to-dock/unblur-in-overview true
+#dconf write /org/gnome/shell/extensions/blur-my-shell/panel/override-background-dynamically true
+#dconf write /org/gnome/shell/extensions/blur-my-shell/pipelines "{\
+#    'pipeline_default': {\
+#        'name': <'Default'>,\
+#        'effects': <[\
+#            <{\
+#                'type': <'native_static_gaussian_blur'>,\
+#                'id': <'effect_000000000000'>,\
+#                'params': <{\
+#                    'radius': <30>,\
+#                    'brightness': <0.59999999999999998>\
+#                }>\
+#            }>\
+#        ]>\
+#    },\
+#    'pipeline_default_rounded': {\
+#        'name': <'Default rounded'>,\
+#        'effects': <[\
+#            <{\
+#                'type': <'native_static_gaussian_blur'>,\
+#                'id': <'effect_000000000001'>,\
+#                'params': <{\
+#                    'radius': <30>,\
+#                    'brightness': <0.59999999999999998>\
+#                }>\
+#            }>,\
+#            <{\
+#                'type': <'corner'>,\
+#                'id': <'effect_000000000002'>,\
+#                'params': <{\
+#                    'radius': <10>\
+#                }>\
+#            }>\
+#        ]>\
+#    }\
+#}"
 
 dconf reset -f /org/gnome/shell/extensions/Logo-menu/
 dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-image 5
@@ -203,14 +203,14 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 #gsettings set org.gnome.TextEditor wrap-text false
 
 gei 5895 # app-hider
-gei 3193 # blur-my-shell
+#gei 3193 # blur-my-shell
 gei 5410 # grand-theft-focus
 gei 1319 # gsconnect
 gei 4451 # logo-menu
 gei 7048 # rounded-window-corners-reborn
 gei 355  # status-area-horizontal-spacing
 gei 7180 # syncthing-toggle
-gei 19   # user-themes
+#gei 19   # user-themes
 gei 6281 # wallpaper-slideshow
 gei 8087 # window-centering
 gei 6343 # window-gestures
