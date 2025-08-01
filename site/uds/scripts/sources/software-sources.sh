@@ -19,7 +19,7 @@ if command -v gnome-terminal>/dev/null;then
 Type=Application
 Name=Topgrade
 Exec=gnome-terminal --title="Topgrade" --geometry=80x24 -- bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=update-manager
+Icon=fwupd
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true
