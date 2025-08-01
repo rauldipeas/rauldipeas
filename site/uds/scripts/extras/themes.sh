@@ -25,11 +25,11 @@ gei() {
 }
 
 ## Bibata mouse cursor
-sudo apt install -y\
-    bibata-cursor-theme\
-    dmz-cursor-theme
-sudo update-alternatives --set x-cursor-theme /usr/share/icons/DMZ-White/cursor.theme #fallback
-gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
+#sudo apt install -y\
+#    bibata-cursor-theme\
+#    dmz-cursor-theme
+#sudo update-alternatives --set x-cursor-theme /usr/share/icons/DMZ-White/cursor.theme #fallback
+#gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
 
 ## GNOME shell
 sudo apt install -y\
@@ -234,6 +234,11 @@ Terminal=false
 Categories=System;Utility;
 StartupNotify=true
 EOF
+
+## Oxygen cursor
+sudo apt install -y oxygen-cursor-theme
+sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/oxy-white.theme
+gsettings set org.gnome.desktop.interface cursor-theme oxy-white
 
 ## Papirus icon theme
 sudo add-apt-repository -y ppa:papirus/papirus
