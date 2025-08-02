@@ -34,6 +34,7 @@ gei() {
 ## GNOME shell
 sudo apt install -y\
     gnome-shell-extension-alphabetical-grid\
+    gnome-shell-extension- gsconnect\
     gnome-shell-extension-prefs
 
 dconf reset -f /org/gnome/shell/extensions/appindicator/
@@ -70,6 +71,7 @@ dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
     ('2wydifuftb', 'gtk-dialog-authentication-panel', ''),\
     ('Cable', 'ladi-starting', ''),\
     ('Diodon', 'notes-panel', ''),\
+    ('Proton Mail Bridge', 'protonmail-indicator', ''),\
     ('q4wine', 'folder-white-wine', ''),\
     ('QjackCtl', 'gnome-device-manager', ''),\
     ('rclone-browser', 'cloudstatus', ''),\
@@ -206,7 +208,7 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 gei 5895 # app-hider
 #gei 3193 # blur-my-shell
 gei 5410 # grand-theft-focus
-gei 1319 # gsconnect
+#gei 1319 # gsconnect
 gei 4451 # logo-menu
 gei 7048 # rounded-window-corners-reborn
 gei 355  # status-area-horizontal-spacing
