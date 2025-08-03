@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 enter_tmp(){
-    find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -rf {} +
+    sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -rf {} +
     cd /tmp
 }
 
@@ -61,6 +61,6 @@ install_deb() {
     if [ -n "$INSTNAME" ];then
         sudo apt install -y $INSTNAME
         else
-        sudo apt install -y $(find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')
+        sudo apt install -y $(sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')
     fi
 }
