@@ -20,5 +20,9 @@ EOF
 [Appearance]
 icon_theme=Papirus-Dark
 style=gtk2
+
+[Fonts]
+fixed=@Variant(\0\0\0@\0\0\0\x16\0U\0\x62\0u\0n\0t\0u\0 \0S\0\x61\0n\0s@&\0\0\0\0\0\0\xff\xff\xff\xff\x5\x1\0\x19\x10)
+general=@Variant(\0\0\0@\0\0\0\x16\0U\0\x62\0u\0n\0t\0u\0 \0S\0\x61\0n\0s@&\0\0\0\0\0\0\xff\xff\xff\xff\x5\x1\0\x19\x10)
 EOF
 fi
