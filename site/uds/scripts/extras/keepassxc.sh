@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME='keepassxc'
-LN='org.keepassxc.KeePassXC'
+#BASENAME=''
+#LN=''
 #SWMC=''
 #TARGET="$()"
-EXEC_OLD='keepassxc'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb keepassxc'
+#EXEC_OLD=''
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
@@ -14,5 +14,5 @@ INSTNAME='keepassxc'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #enter_tmp
 #download
-fix_launcher
+#fix_launcher
 install_deb

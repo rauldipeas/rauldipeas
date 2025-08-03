@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-LANGUAGE=en pacstall -IP yabridge
+pacstall -IP yabridge
 mkdir -p "$HOME"/.wine/drive_c/Program\ Files/{VSTPlugins,Common\ Files/VST3}
 yabridgectl add "$HOME"/.wine/drive_c/Program\ Files/Common\ Files/VST3
 yabridgectl add "$HOME"/.wine/drive_c/Program\ Files/VSTPlugins

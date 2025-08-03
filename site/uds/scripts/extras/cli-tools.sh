@@ -104,7 +104,13 @@ sudo apt install -y lsd
 #wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Ubuntu.tar.xz
 #mkdir -p "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
 #tar -xf Ubuntu.tar.xz -C "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
-LANGUAGE=en pacstall -IP nerd-fonts:ttf-ubuntu-nerd nerd-fonts:ttf-ubuntu-mono-nerd
+pacstall -IP nerd-fonts:ttf-ubuntu-nerd nerd-fonts:ttf-ubuntu-mono-nerd
 
 ## Micro
 sudo apt install -y micro
+mkdir -p "$HOME"/.config/micro
+cat <<EOF |tee "$HOME"/.config/micro/settings.json>/dev/null
+{
+    "eofnewline": false
+}
+EOF

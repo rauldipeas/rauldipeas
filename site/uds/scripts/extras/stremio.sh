@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME="stremio"
-LN='smartcode-stremio'
+#BASENAME=''
+#LN=''
 #SWMC=''
 TARGET='https://dl.strem.io/shell-linux/v4.4.168/stremio_4.4.168-1_amd64.deb'
-EXEC_OLD='stremio'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb stremio'
+#EXEC_OLD=''
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
@@ -14,7 +14,7 @@ EXEC_NEW='env QT_QPA_PLATFORM=xcb stremio'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
-fix_launcher
+#fix_launcher
 wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/"$(wget -qO- http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/|grep -oP 'libssl1.1_[^"]+?amd64\.deb'|sort -V|tail -n1)"
 rm -rf "$PWD"/stremio_extract
 dpkg-deb -R "$PWD"/stremio*.deb "$PWD"/stremio_extract

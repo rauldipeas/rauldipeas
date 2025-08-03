@@ -15,4 +15,4 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #download
 #fix_launcher
 install_deb
-LANGUAGE=en pacstall -IP rustdesk-deb
+pacstall -IP rustdesk-deb

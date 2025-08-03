@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME="dialect"
-LN='app.drey.Dialect'
+#BASENAME=''
+#LN=''
 #SWMC=''
 #TARGET="$()"
-EXEC_OLD='dialect'
-EXEC_NEW='env GDK_BACKEND=x11 dialect'
+#EXEC_OLD=''
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
@@ -14,7 +14,7 @@ INSTNAME='dialect'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #enter_tmp
 #download
-fix_launcher
+#fix_launcher
 install_deb
 dconf reset -f /app/drey/Dialect/
 dconf write /app/drey/Dialect/translators/google/dest-langs "['pt', 'es', 'de', 'en']"

@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-BASENAME="flowblade"
+BASENAME='flowblade'
 LN='io.github.jliljebl.Flowblade'
 SWMC='Flowblade'
 #TARGET="$()"

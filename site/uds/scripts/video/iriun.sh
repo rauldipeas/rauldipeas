@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME="iriun"
+BASENAME='iriun'
 LN='iriunwebcam'
 #SWMC=''
 TARGET="$(curl -sL https://iriun.com/|grep deb|cut -d '"' -f4)"
-EXEC_OLD='/usr/local/bin/iriunwebcam'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb iriunwebcam'
+#EXEC_OLD=''
+#EXEC_NEW=''
 ICON_OLD='iriunwebcam'
 ICON_NEW='webcamoid'
 #DEPS=''

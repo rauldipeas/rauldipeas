@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-LANGUAGE=en pacstall -IP ffmpeg4.4
+pacstall -IP ffmpeg4.4
 sudo apt autoremove --purge -y
 am -i --icons reaper
 wget -q --show-progress -O- https://stash.reaper.fm/41334/libSwell.colortheme|sed 's/Open Sans/Segoe UI Symbol/'|sudo tee /opt/reaper/libSwell.colortheme>/dev/null

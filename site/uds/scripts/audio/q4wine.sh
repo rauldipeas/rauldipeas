@@ -1,24 +1,20 @@
 #!/bin/bash
 set -e
-BASENAME="q4wine"
-LN='q4wine'
+#BASENAME='''
+#LN=''
 #SWMC=''
 #TARGET="$()"
-EXEC_OLD='q4wine'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb q4wine'
+#EXEC_OLD=''
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''
 #PPA=''
 INSTNAME='q4wine'
-BASENAME2='qt5ct'
-LN2='qt5ct'
-EXEC_OLD2='qt5ct'
-EXEC_NEW2='env QT_QPA_PLATFORM=xcb qt5ct'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #enter_tmp
 #download
-fix_launcher
+#fix_launcher
 sudo dpkg --add-architecture i386
 sudo apt update
 install_deb
@@ -28,7 +24,10 @@ if command -v q4wine>/dev/null;then
 fi
 if [ $XDG_CURRENT_DESKTOP == ubuntu:GNOME ];then
 	sudo apt install -y qt5-gtk2-platformtheme qt5ct
-	printf 'export QT_QPA_PLATFORMTHEME=qt5ct'|sudo tee /etc/profile.d/qt-qpa-platformtheme.sh>/dev/null
+	cat <<EOF |sudo tee /etc/profile.d/qt-qpa.sh>/dev/null
+export QT_QPA_PLATFORM=xcb
+export QT_QPA_PLATFORMTHEME=qt5ct
+EOF
 	mkdir -p "$HOME"/.config/qt5ct
 	cat <<EOF |tee "$HOME"/.config/qt5ct/qt5ct.conf>/dev/null
 [Appearance]

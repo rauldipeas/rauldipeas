@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME="rclone"
-LN='rclone-browser'
+#BASENAME=''
+#LN=''
 #SWMC=''
 TARGET="$(wget -qO- https://rclone.org/downloads|grep amd64.deb|head -n1|cut -d '"' -f4)"
-EXEC_OLD='rclone-browser'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb rclone-browser'
+#EXEC_OLD=''
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 DEPS='rclone-browser'
@@ -14,5 +14,5 @@ DEPS='rclone-browser'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
-fix_launcher
+#fix_launcher
 install_deb

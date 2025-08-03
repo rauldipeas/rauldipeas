@@ -1,3 +1,3 @@
 #!/bin/bash
 set -e
-LANGUAGE=en pacstall -IP blender-bin
+pacstall -IP blender-bin

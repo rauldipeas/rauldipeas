@@ -1,3 +1,3 @@
 #!/bin/bash
 set -e
-LANGUAGE=en pacstall -IP rambox-deb
+pacstall -IP rambox-deb

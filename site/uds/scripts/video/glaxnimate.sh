@@ -39,5 +39,4 @@ make translations
 sudo make install
 cd /tmp
 rm -rf /tmp/glaxnimate
-sudo sed -i 's/Exec=glaxnimate/Exec=env QT_QPA_PLATFORM=xcb glaxnimate/g' /usr/local/share/applications/org.mattbas.Glaxnimate.desktop
 printf '\nStartupWMClass=glaxnimate'|sudo tee -a /usr/local/share/applications/org.mattbas.Glaxnimate.desktop>/dev/null

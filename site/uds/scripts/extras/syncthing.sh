@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME="syncthing"
-#LN='syncthingtray'
+#BASENAME=''
+#LN=''
 #SWMC=''
 #TARGET="$()"
-#EXEC_OLD='syncthingtray'
-#EXEC_NEW='env QT_QPA_PLATFORM=xcb syncthingtray'
+#EXEC_OLD=''
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 #DEPS=''

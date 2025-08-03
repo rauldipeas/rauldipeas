@@ -18,4 +18,4 @@ wget -q --show-progress https://mega.nz/linux/repo/"$MEGASYNCVERSION"/amd64/mega
 wget -q --show-progress https://mega.nz/linux/repo/"$MEGASYNCVERSION"/amd64/nautilus-megasync-"$MEGASYNCVERSION"_amd64.deb
 #fix_launcher
 install_deb
-#LANGUAGE=en pacstall -IP megasync-deb
+#pacstall -IP megasync-deb

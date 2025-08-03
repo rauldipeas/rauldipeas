@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-BASENAME="freedownloadmanager"
+BASENAME='freedownloadmanager'
 LN='freedownloadmanager'
 SWMC='fdm'
 TARGET="$(wget -qO- https://www.freedownloadmanager.org/pt/download-fdm-for-linux.htm|grep deb|head -n1|cut -d '"' -f4)"

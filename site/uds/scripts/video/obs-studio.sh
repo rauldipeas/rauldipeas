@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME="obs-studio"
-LN='com.obsproject.Studio'
+#BASENAME=''
+#LN=''
 #SWMC=''
 #TARGET="$()"
-EXEC_OLD='obs'
-EXEC_NEW='env QT_QPA_PLATFORM=xcb obs'
+#EXEC_OLD='obs'
+#EXEC_NEW=''
 #ICON_OLD=''
 #ICON_NEW=''
 DEPS='vlc vlc-plugin-jack'
@@ -14,6 +14,6 @@ INSTNAME='obs-studio'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 #enter_tmp
 #download
-fix_launcher
+#fix_launcher
 add_ppa
 install_deb

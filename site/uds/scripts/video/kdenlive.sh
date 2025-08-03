@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-BASENAME="kdenlive"
+BASENAME='kdenlive'
 LN='org.kde.kdenlive'
 SWMC='org.kde.kdenlive'
 KDENLIVE_VER="$(wget -qO- https://download.kde.org/stable/kdenlive|grep folder|cut -d '"' -f4|cut -d '/' -f1)"
