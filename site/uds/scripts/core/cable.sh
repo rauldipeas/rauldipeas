@@ -16,3 +16,14 @@ cat <<EOF |tee "$HOME"/.config/cable/config.ini>/dev/null
 tray_enabled = True
 autostart_enabled = True
 EOF
+mkdir -p "$HOME"/.local/share/applications
+cat <<EOF |tee "$HOME"/.local/share/applications/cables.desktop>/dev/null
+[Desktop Entry]
+Name=Cables
+Exec=pw-jack cable %u
+Icon=laditools
+Terminal=false
+Type=Application
+StartupWMClass=connection-manager.py
+NoDisplay=true
+EOF
