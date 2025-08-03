@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 enter_tmp(){
-    sudo find /tmp -mindepth 1 -user $USER -not -path "/tmp/.veracrypt*" -exec rm -rf {} +
+    find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -rf {} +
     cd /tmp
 }
 
@@ -61,34 +61,6 @@ install_deb() {
     if [ -n "$INSTNAME" ];then
         sudo apt install -y $INSTNAME
         else
-        sudo apt install -y $(sudo find /tmp -type f -name '*.deb')
-    fi
-}
-
-install_appimage() {
-    appimage=$(sudo find /tmp -type f -name '*.AppImage')
-    basename=$BASENAME
-    chmod +x $appimage
-    $appimage --appimage-extract>/dev/null
-    sudo rm -rf /opt/$basename
-    sudo mv squashfs-root /opt/$basename
-    sudo ln -fs /opt/$basename/AppRun /usr/local/bin/$basename
-    sudo cp -rf /opt/$basename/usr/share/icons /usr/local/share/
-    if [ -f /opt/$basename/$ICON_OLD.svg ];then
-    	sudo ln -fs /opt/$basename/$ICON_OLD.svg /usr/local/share/icons/hicolor/scalable/apps/$basename.svg
-    	else
-    	if [ -f /opt/$basename/$ICON_OLD.png ];then
-    	sudo ln -fs /opt/$basename/$ICON_OLD.png /usr/local/share/icons/hicolor/$(identify -format "%wx%h\n" /opt/$basename/$ICON_OLD.png)/apps/$basename.png
-    	fi
-    fi
-    if [ ! -L /opt/$basename/$LN.desktop ];then
-        sudo ln -fs /opt/$basename/usr/share/applications/$LN.desktop /usr/local/share/applications/$basename.desktop
-        else
-        sudo ln -fs /opt/$basename/$LN.desktop /usr/local/share/applications/$basename.desktop
-    fi
-    sudo sed -i "s/^Exec=$EXEC_OLD/Exec=$EXEC_NEW/g" /usr/local/share/applications/$basename.desktop
-    sudo sed -i "s/Icon=$ICON_OLD/Icon=$ICON_NEW/g" /usr/local/share/applications/$basename.desktop
-    if [ -n "$SWMC" ];then
-        printf "\nStartupWMClass=$SWMC"|sudo tee -a /usr/local/share/applications/$basename.desktop>/dev/null
+        sudo apt install -y $(find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')
     fi
 }
