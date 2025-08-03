@@ -11,6 +11,7 @@ set -e
 #Categories=System;Utility;
 #StartupNotify=true
 #EOF
+rm -f "$HOME"/.local/share/applications/uds.desktop
 cd /tmp
 rm -f /tmp/uds.deb
 wget -q --show-progress https://archive.org/download/ubuntuderivativesstudio/uds.deb

@@ -99,11 +99,6 @@ gsettings set org.gnome.desktop.interface monospace-font-name "'Ubuntu Mono 11'"
 
 ## LSD
 sudo apt install -y lsd
-#cd /tmp
-#rm -f /tmp/*.tar.xz
-#wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Ubuntu.tar.xz
-#mkdir -p "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
-#tar -xf Ubuntu.tar.xz -C "$HOME"/.fonts/Nerd\ Fonts/Ubuntu
 pacstall -IP nerd-fonts:ttf-ubuntu-nerd nerd-fonts:ttf-ubuntu-mono-nerd
 
 ## Micro

@@ -1,12 +1,5 @@
 #!/bin/bash
 set -e
-#LN=''
-#SWMC=''
-#TARGET="$()"
-#EXEC_OLD=''
-#EXEC_NEW=''
-#ICON_OLD=''
-#ICON_NEW=''
 DEPS="nohang\
 	ubuntustudio-lowlatency-settings\
 	ubuntustudio-performance-tweaks\
@@ -14,9 +7,6 @@ DEPS="nohang\
 PPA='savoury1/multimedia'
 INSTNAME='helvum'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
-#enter_tmp
-#download
-#fix_launcher
 sudo debconf-set-selections <<< 'jackd2 jackd/tweak_rt_limits string true'
 add_ppa
 install_deb
@@ -30,9 +20,6 @@ sudo sed -i 's/threadirqs/threadirqs nosmt=force/g' /etc/default/grub.d/ubuntust
 sudo update-grub
 mkdir -p "$HOME"/.config/rncbc.org
 wget -q --show-progress -O "$HOME"/.config/rncbc.org/QjackCtl.conf https://rauldipeas.com.br/uds/settings/QjackCtl.conf
-#pw-metadata -n settings 0 clock.force-quantum 128 >/dev/null
-#pw-metadata -n settings 0 clock.force-rate 44100 >/dev/null
-#printf 'export PIPEWIRE_LATENCY="128/44100"'|sudo tee /etc/profile.d/pwjack.sh>/dev/null
 mkdir -p "$HOME"/.config/pipewire/pipewire.conf.d
 export QOPT=128
 export ROPT=44100

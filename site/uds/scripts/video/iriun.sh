@@ -2,15 +2,9 @@
 set -e
 BASENAME='iriun'
 LN='iriunwebcam'
-#SWMC=''
 TARGET="$(curl -sL https://iriun.com/|grep deb|cut -d '"' -f4)"
-#EXEC_OLD=''
-#EXEC_NEW=''
 ICON_OLD='iriunwebcam'
 ICON_NEW='webcamoid'
-#DEPS=''
-#PPA=''
-#INSTNAME=''
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download

@@ -7,11 +7,7 @@ EXEC_OLD='mscore4portable'
 EXEC_NEW='musescore-studio'
 ICON_OLD='mscore4portable'
 ICON_NEW='musescore'
-#DEPS=''
-#PPA=''
-#INSTNAME=''
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
-#fix_launcher
 install_appimage

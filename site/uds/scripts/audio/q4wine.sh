@@ -1,20 +1,7 @@
 #!/bin/bash
 set -e
-#BASENAME='''
-#LN=''
-#SWMC=''
-#TARGET="$()"
-#EXEC_OLD=''
-#EXEC_NEW=''
-#ICON_OLD=''
-#ICON_NEW=''
-#DEPS=''
-#PPA=''
 INSTNAME='q4wine'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
-#enter_tmp
-#download
-#fix_launcher
 sudo dpkg --add-architecture i386
 sudo apt update
 install_deb

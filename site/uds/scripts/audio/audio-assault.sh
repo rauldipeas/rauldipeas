@@ -14,7 +14,6 @@ cat <<EOF |tee "$HOME"/.local/share/applications/amp-locker>/dev/null
 Type=Application
 Name=Amp Locker
 Exec=amp-locker
-#Icon=amp-locker
 Icon=guitarix
 Terminal=false
 Categories=Audio;

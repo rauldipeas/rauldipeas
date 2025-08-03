@@ -1,25 +1,10 @@
 #!/bin/bash
 set -e
-#TODO
-#LN=''
-#SWMC=''
 TARGET="$(wget -qO- 'https://www.retroarch.com/?page=platforms'|grep AppImage|grep RetroArch.7z|cut -d '"' -f2)"
-#EXEC_OLD=''
-#EXEC_NEW=''
-#ICON_OLD=''
-#ICON_NEW=''
-#DEPS=''
-#PPA='libretro/stable'
-#INSTNAME='retroarch'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
-#fix_launcher
-#add_ppa
-#install_deb
 7za x -y -bsp0 RetroArch.7z>/dev/null
-#/tmp/RetroArch-Linux-x86_64/RetroArch-Linux-x86_64.AppImage --appimage-extract
-#sudo mv /tmp/squashfs-root /opt/retroarch
 mkdir -p "$HOME"/.local/share/retroarch
 mv /tmp/RetroArch-Linux-x86_64/RetroArch-Linux-x86_64.AppImage* "$HOME"/.local/share/retroarch/
 ln -fs "$HOME"/.local/share/retroarch/RetroArch-Linux-x86_64.AppImage "$HOME"/.local/bin/retroarch

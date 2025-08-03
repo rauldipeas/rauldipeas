@@ -7,7 +7,6 @@ yabridgectl add "$HOME"/.wine/drive_c/Program\ Files/VSTPlugins
 if [ $XDG_SESSION_TYPE == wayland ];then
 	printf 'Wayland'
 	sudo systemctl mask rtkit-daemon.service #https://linuxmusicians.com/viewtopic.php?t=26386&start=15
-	#sudo apt autoremove --purge rtkit
 	else
 	printf 'X11'
 fi

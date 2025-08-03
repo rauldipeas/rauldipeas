@@ -7,7 +7,6 @@ sudo bash -c "$(wget -qO- https://github.com/ivan-hc/AM/raw/main/INSTALL)"
 yes|sudo bash -c "$(wget -qO- https://pacstall.dev/q/install)"
 
 ## Topgrade
-#am -i topgrade
 cd /tmp
 rm -f /tmp/*.deb
 wget -q --show-progress "$(wget -qO- https://api.github.com/repos/topgrade-rs/topgrade/releases|grep browser_download_url|grep deb|head -n1|cut -d '"' -f4)"
