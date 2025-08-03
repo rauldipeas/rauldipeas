@@ -10,7 +10,7 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 sudo debconf-set-selections <<< 'jackd2 jackd/tweak_rt_limits string true'
 add_ppa
 install_deb
-sudo apt autoremove --purge qmidinet
+sudo apt autoremove --purge -y qmidinet
 sudo usermod -aG audio,pipewire "$USER"
 sudo wget -q --show-progress -O /etc/udev/rules.d/99-cpu-dma-latency.rules https://github.com/Ardour/ardour/raw/refs/heads/master/tools/udev/99-cpu-dma-latency.rules>/dev/null
 sudo udevadm control --reload-rules
