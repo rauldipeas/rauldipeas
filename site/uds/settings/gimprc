@@ -13,6 +13,7 @@
 (monitor-yresolution 116)
 (toolbox-color-area no)
 (toolbox-wilber no)
+(custom-title-bar yes)
 (fill-options
     (style fg-color)
     (custom-style solid-color)

@@ -239,9 +239,9 @@ StartupNotify=true
 EOF
 
 ## Oxygen cursor
-sudo apt install -y oxygen-cursor-theme
-sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/oxy-white.theme
-gsettings set org.gnome.desktop.interface cursor-theme oxy-white
+#sudo apt install -y oxygen-cursor-theme
+#sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/oxy-white.theme
+#gsettings set org.gnome.desktop.interface cursor-theme oxy-white
 
 ## Papirus icon theme
 sudo add-apt-repository -y ppa:papirus/papirus
