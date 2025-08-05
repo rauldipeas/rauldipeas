@@ -25,11 +25,16 @@ gei() {
 }
 
 ## Bibata mouse cursor
-#sudo apt install -y\
-#    bibata-cursor-theme\
-#    dmz-cursor-theme
-#sudo update-alternatives --set x-cursor-theme /usr/share/icons/DMZ-White/cursor.theme #fallback
-#gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
+mkdir -p /tmp/bibata
+cd /tmp/bibata
+rm -f /tmp/bibata/*.xz
+wget -q --show-progress "$(wget -qO- https://api.github.com/repos/ful1e5/Bibata_Cursor/releases|grep browser_download_url|grep download|grep  Modern-Ice.tar.xz|head -n1|cut -d '"' -f4)"
+tar -xf Bibata*.tar.xz
+rm Bibata*.tar.xz
+sudo mv Bibata* /usr/share/icons/
+sudo update-alternatives --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/Bibata-Modern-Ice/cursor.theme 100
+#sudo update-alternatives --set x-cursor-theme /usr/share/icons/Bibata-Modern-Ice/cursor.theme
+gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
 
 ## GNOME shell
 sudo apt install -y\
@@ -237,11 +242,6 @@ Terminal=false
 Categories=System;Utility;
 StartupNotify=true
 EOF
-
-## Oxygen cursor
-#sudo apt install -y oxygen-cursor-theme
-#sudo update-alternatives --set x-cursor-theme /etc/X11/cursors/oxy-white.theme
-#gsettings set org.gnome.desktop.interface cursor-theme oxy-white
 
 ## Papirus icon theme
 sudo add-apt-repository -y ppa:papirus/papirus
