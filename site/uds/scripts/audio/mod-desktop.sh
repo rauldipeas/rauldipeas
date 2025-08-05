@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+mkdir -p /tmp/mod
+cd /tmp/mod
+rm -f /tmp/mod/*.xz
+#wget -q --show-progress "$(wget -qO- https://api.github.com/repos/mod-audio/mod-desktop/releases|grep browser_download_url|grep download|grep linux-x86_64|head -n1|cut -d '"' -f4)"
+wget -q --show-progress $(wget -qO- https://mod.audio/desktop/#download_app|grep tar.xz|cut -d '"' -f4)
+tar -xf mod-desktop*.tar.xz
+rm mod-desktop*.tar.xz
+cp -r mod-desktop*/mod-desktop "$HOME"/.local/share/
+mkdir -p "$HOME"/.local/share/applications
+cat <<EOF |tee "$HOME"/.local/share/applications/mod-desktop.desktop>/dev/null
+[Desktop Entry]
+Categories=AudioVideo;X-AudioEditing;Qt;
+Exec=$HOME/.local/share/mod-desktop/mod-desktop
+GenericName=MOD Desktop
+Icon=$HOME/.local/share/mod-desktop/html/img/social/favicon.png
+Name=MOD Desktop
+Terminal=false
+Type=Application
+Version=1.0
+EOF
