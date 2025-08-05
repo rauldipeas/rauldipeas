@@ -8,13 +8,14 @@ wget -q --show-progress $(wget -qO- https://mod.audio/desktop|grep tar.xz|cut -d
 tar -xf mod-desktop*.tar.xz
 rm mod-desktop*.tar.xz
 cp -r mod-desktop*/mod-desktop "$HOME"/.local/share/
-mkdir -p "$HOME"/.local/share/applications
+mkdir -p "$HOME"/.local/share/{applications,icons}
+wget -q --show-progress -O "$HOME"/.local/share/icons/mod-desktop.svg https://raw.githubusercontent.com/mod-audio/mod-desktop/refs/heads/main/res/mod-logo.svg
 cat <<EOF |tee "$HOME"/.local/share/applications/mod-desktop.desktop>/dev/null
 [Desktop Entry]
 Categories=AudioVideo;X-AudioEditing;Qt;
 Exec=$HOME/.local/share/mod-desktop/mod-desktop
 GenericName=MOD Desktop
-Icon=$HOME/.local/share/mod-desktop/html/img/social/favicon.png
+Icon=mod-desktop
 Name=MOD Desktop
 Terminal=false
 Type=Application
