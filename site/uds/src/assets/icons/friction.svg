@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by sixsixfive and published under CC0 v1.0(http://creativecommons.org/publicdomain/zero/1.0/deed.en) on openclipart.org -->
+
+<svg
+   version="1.0"
+   viewBox="0 0 64 64"
+   id="svg83272"
+   width="64"
+   height="64"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4" />
+  <path
+     id="path2659"
+     fill="#555753"
+     d="m 10.901173,4.0003334 c -3.8527856,0 -6.9010027,3.048198 -6.9010027,6.9009586 v 42.197379 c 0,3.852762 3.0482171,6.90096 6.9010027,6.90096 h 42.197643 c 3.852786,0 6.901002,-3.048198 6.901002,-6.90096 V 10.901292 c 0,-3.8527606 -3.048076,-6.9009586 -6.900721,-6.9009586 H 10.901454 Z"
+     style="stroke-width:1.40658" />
+  <path
+     id="rect3256"
+     fill="#2e3436"
+     d="m 10.901173,4.0003334 c -0.346386,0 -0.679241,0.040266 -1.0109856,0.087911 L 4.0001,16.483725 V 36.703302 L 19.559778,4.0003334 H 10.90054 Z"
+     style="stroke-width:1.40658" />
+  <path
+     id="rect3258"
+     fill="#2e3436"
+     d="M 59.999537,26.330061 43.955993,59.99935 h 9.142823 c 0.180831,0 0.350408,-0.03076 0.52747,-0.04396 L 59.999818,46.549006 V 26.329428 Z"
+     style="stroke-width:1.40658" />
+  <path
+     id="rect3260"
+     fill="url(#radialGradient3930)"
+     d="M 11.25282,26.330061 4.0001703,41.583007 v 11.516368 c 0,3.852761 3.0482171,6.900959 6.9010027,6.900959 h 30.680499 l 7.4725,-15.736809 -37.802056,-17.933886 z"
+     style="fill:#0064e0;stroke-width:1.40658" />
+  <path
+     id="rect3265"
+     fill="#eeeeec"
+     d="m 59.999537,30.506195 -0.791205,1.670313 0.791205,0.351645 z m -2.109882,4.483472 -1.362632,2.813158 3.472584,1.626287 v -3.428536 l -2.109882,-1.01098 z m -2.681238,5.626317 -1.362633,2.857044 4.571411,2.153754 1.362633,-2.813159 -4.571411,-2.19778 z m -2.681238,5.670202 -1.362633,2.857044 4.571411,2.153754 1.318676,-2.813159 -4.527525,-2.197779 z m -2.681239,5.670202 -1.362632,2.813159 4.571412,2.153754 1.318675,-2.813159 -4.527525,-2.153754 z m -2.725264,5.626318 -1.098897,2.417628 h 5.582466 l 0.08721,-0.220832 -4.571411,-2.197077 z"
+     style="stroke-width:1.40658" />
+  <path
+     id="path3433"
+     fill="#eeeeec"
+     d="m 14.549862,4.0003334 2.417644,1.1428457 0.571426,-1.1428457 H 14.549933 Z M 11.076996,5.8024428 9.7142939,8.6594867 14.285705,10.813241 15.648338,8.0000823 11.076925,5.8023022 Z m -2.6812379,5.6702022 -1.3626322,2.813159 4.5714111,2.153754 1.362632,-2.813159 z m -2.6812382,5.626318 -1.3626322,2.857043 4.5714114,2.153754 1.3626329,-2.813158 -4.5714121,-2.19778 z m -1.7143496,6.110179 v 3.472564 l 2.2416794,1.098538 1.3186764,-2.856762 -3.5603558,-1.71462 z m 0,6.944987 v 2.329576 L 4.8792879,30.593544 4.0001703,30.153987 Z"
+     style="stroke-width:1.40658" />
+  <path
+     id="path3362"
+     fill="url(#radialGradient3928)"
+     d="M 21.845835,4.0003334 12.175823,24.439337 49.934274,42.373223 60.0001,21.23093 V 10.901292 c 0,-0.81739 -0.142628,-1.6061723 -0.395603,-2.3295759 L 49.934204,4.0003334 H 21.846046 Z"
+     style="fill:#ff7f2a;stroke-width:1.40658" />
+  <metadata
+     id="metadata83270">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
