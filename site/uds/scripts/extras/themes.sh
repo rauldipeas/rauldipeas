@@ -135,6 +135,10 @@ dconf write /org/gnome/shell/extensions/azwallpaper/slideshow-slide-duration "(0
 #    }\
 #}"
 
+dconf reset -f /org/gnome/shell/extensions/editdesktopfiles/
+dconf write /org/gnome/shell/extensions/editdesktopfiles/custom-edit-command  "'x-terminal-emulator -e micro %U'"
+dconf write /org/gnome/shell/extensions/editdesktopfiles/use-custom-edit-command true
+
 dconf reset -f /org/gnome/shell/extensions/Logo-menu/
 dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-image 5
 dconf write /org/gnome/shell/extensions/Logo-menu/menu-button-icon-size 22
@@ -213,6 +217,7 @@ gsettings set org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profi
 
 gei 5895 # app-hider
 #gei 3193 # blur-my-shell
+gei 7397 # edit-desktop-files
 gei 5410 # grand-theft-focus
 #gei 1319 # gsconnect
 gei 4451 # logo-menu
