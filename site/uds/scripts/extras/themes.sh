@@ -225,7 +225,7 @@ gei 7048 # rounded-window-corners-reborn
 gei 4099 # no-overview
 gei 355  # status-area-horizontal-spacing
 gei 7180 # syncthing-toggle
-gei 6586 # system-monitor-tray-indicator
+#gei 6586 # system-monitor-tray-indicator
 gei 3960 # transparent-top-bar-adjustable-transparency
 #gei 19   # user-themes
 gei 6281 # wallpaper-slideshow
