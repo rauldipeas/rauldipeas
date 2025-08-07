@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-sudo apt install -y extrepo
+sudo apt install -y --reinstall extrepo
 sudo extrepo enable librewolf
 sudo apt update
-sudo apt install -y chrome-gnome-shell librewolf
+sudo apt install -y --reinstall chrome-gnome-shell librewolf

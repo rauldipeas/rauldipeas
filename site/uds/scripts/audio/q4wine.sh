@@ -10,7 +10,7 @@ if command -v q4wine>/dev/null;then
 	xdg-mime default q4wine.desktop application/x-msi
 fi
 if [ $XDG_CURRENT_DESKTOP == ubuntu:GNOME ];then
-	sudo apt install -y qt5-gtk2-platformtheme qt5ct
+	sudo apt install -y --reinstall qt5-gtk2-platformtheme qt5ct
 	cat <<EOF |sudo tee /etc/profile.d/qt-qpa.sh>/dev/null
 export QT_QPA_PLATFORM=xcb
 export QT_QPA_PLATFORMTHEME=qt5ct

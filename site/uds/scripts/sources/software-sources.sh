@@ -10,7 +10,7 @@ yes|sudo bash -c "$(wget -qO- https://pacstall.dev/q/install)"
 cd /tmp
 rm -f /tmp/*.deb
 wget -q --show-progress "$(wget -qO- https://api.github.com/repos/topgrade-rs/topgrade/releases|grep browser_download_url|grep deb|head -n1|cut -d '"' -f4)"
-sudo apt install -y ./topgrade*.deb
+sudo apt install -y --reinstall ./topgrade*.deb
 mkdir -p "$HOME"/.local/share/applications
 if command -v gnome-terminal>/dev/null;then
 	cat <<EOF |tee "$HOME"/.local/share/applications/topgrade.desktop>/dev/null

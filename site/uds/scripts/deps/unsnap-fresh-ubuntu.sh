@@ -7,6 +7,6 @@ if [ $XDG_CURRENT_DESKTOP == ubuntu:GNOME ];then
         sudo rm -rf "$HOME"/snap /snap /var/snap /var/lib/snapd
         sudo apt-mark hold snapd
         printf 'Package: snapd\nPin: release a=*\nPin-Priority: -10'|sudo tee /etc/apt/preferences.d/nosnap>/dev/null
-        sudo apt install -y gnome-software
+        sudo apt install -y --reinstall gnome-software
     fi
 fi

@@ -7,4 +7,4 @@ enter_tmp
 download
 install_deb
 sudo apt update
-sudo apt install -y proton-vpn-gnome-desktop
+sudo apt install -y --reinstall proton-vpn-gnome-desktop

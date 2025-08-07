@@ -13,7 +13,7 @@ EOF
 }
 
 ## Bat
-sudo apt install -y bat #batcat
+sudo apt install -y --reinstall bat #batcat
 
 ## Ble.sh
 cd /tmp
@@ -52,16 +52,16 @@ ble-face auto_complete='fg=240,underline,italic'
 EOF
 
 ## Dropbear
-sudo apt install -y dropbear openssh-sftp-server
+sudo apt install -y --reinstall dropbear openssh-sftp-server
 
 ## FD
-sudo apt install -y fd-find #fdfind
+sudo apt install -y --reinstall fd-find #fdfind
 
 ## FDupes
-sudo apt install -y fdupes
+sudo apt install -y --reinstall fdupes
 
 ## fzf
-sudo apt install -y fzf #Ctrl+R
+sudo apt install -y --reinstall fzf #Ctrl+R
 set_bashrc
 cat <<EOF |tee "$HOME"/.bashrc.d/fzf-history.sh>/dev/null
 export HISTTIMEFORMAT='%F %T '
@@ -87,7 +87,7 @@ bind -x '"\C-r": __fzf_history'
 EOF
 
 ## Liquid Prompt
-sudo apt install -y fonts-powerline liquidprompt
+sudo apt install -y --reinstall fonts-powerline liquidprompt
 cp /usr/share/liquidprompt/liquidpromptrc-dist "$HOME"/.config/liquidpromptrc
 sed -i 's/debian.theme/powerline.theme/' "$HOME"/.config/liquidpromptrc
 set_bashrc
@@ -98,11 +98,11 @@ EOF
 gsettings set org.gnome.desktop.interface monospace-font-name "'Ubuntu Mono 11'"
 
 ## LSD
-sudo apt install -y lsd
+sudo apt install -y --reinstall lsd
 pacstall -IP nerd-fonts:ttf-ubuntu-nerd nerd-fonts:ttf-ubuntu-mono-nerd
 
 ## Micro
-sudo apt install -y micro
+sudo apt install -y --reinstall micro
 mkdir -p "$HOME"/.config/micro
 cat <<EOF |tee "$HOME"/.config/micro/settings.json>/dev/null
 {

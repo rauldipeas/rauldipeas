@@ -37,7 +37,7 @@ sudo update-alternatives --install /usr/share/icons/default/index.theme x-cursor
 gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
 
 ## GNOME shell
-sudo apt install -y\
+sudo apt install -y --reinstall\
     gnome-shell-extension-alphabetical-grid\
     gnome-shell-extension- gsconnect\
     gnome-shell-extension-prefs
@@ -253,6 +253,6 @@ EOF
 
 ## Papirus icon theme
 sudo add-apt-repository -y ppa:papirus/papirus
-sudo apt install -y papirus-icon-theme
+sudo apt install -y --reinstall papirus-icon-theme
 gsettings set org.gnome.desktop.interface icon-theme Papirus-Dark
 papirus-folders -C paleorange

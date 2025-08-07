@@ -56,11 +56,11 @@ add_ppa() {
 
 install_deb() {
     if [ -n "$DEPS" ];then
-        sudo apt install -y $DEPS
+        sudo apt install -y --reinstall $DEPS
     fi
     if [ -n "$INSTNAME" ];then
-        sudo apt install -y $INSTNAME
+        sudo apt install -y --reinstall $INSTNAME
         else
-        sudo apt install -y $(sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')
+        sudo apt install -y  --reinstall $(sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -name '*.deb')
     fi
 }
