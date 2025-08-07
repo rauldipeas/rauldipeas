@@ -24,7 +24,7 @@ Icon=retroarch
 Exec=retroarch
 Terminal=false
 StartupNotify=false
-StartupWMClass=retroarch
+StartupWMClass=com.libretro.RetroArch
 Keywords=multi;engine;emulator;xmb;
 Categories=Game;Emulator;
 EOF
