@@ -83,16 +83,25 @@ dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "[\
 
 if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
   dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
-      ('2wydifuftb', 'gtk-dialog-authentication-panel', ''),\
-      ('Cable', 'ladi-starting', ''),\
-      ('Diodon', 'notes-panel', ''),\
-      ('Proton Mail Bridge', 'protonmail-indicator', ''),\
-      ('q4wine', 'folder-white-wine', ''),\
-      ('QjackCtl', 'gnome-device-manager', ''),\
-      ('rclone-browser', 'cloudstatus', ''),\
-      ('un-reboot', 'system-reboot-symbolic', ''),\
-      ('veracrypt', 'veracrypt-panel', ''),\
-      ('vlc', 'vlc-panel', '')\
+    ('2wydifuftb', 'gtk-dialog-authentication-panel', ''),\
+    ('Cable', 'ladi-starting', ''),\
+    ('Diodon', 'notes-panel', ''),\
+    ('Proton Mail Bridge', 'protonmail-indicator', ''),\
+    ('q4wine', 'folder-white-wine', ''),\
+    ('QjackCtl', 'gnome-device-manager', ''),\
+    ('rclone-browser', 'cloudstatus', ''),\
+    ('un-reboot', 'system-reboot-symbolic', ''),\
+    ('veracrypt', 'veracrypt-panel', ''),\
+    ('vlc', 'vlc-panel', '')\
+  ]"
+  else
+  dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
+    ('Cable', 'audio-card-symbolic', ''),\
+    ('Diodon', 'edit-paste-symbolic', ''),\
+    ('KeePassXC', 'passwords-app-symbolic', ''),\
+    ('Proton Mail Bridge', 'padlock-open-symbolic', ''),\
+    ('QjackCtl', 'audio-speakers', ''),\
+    ('veracrypt', 'safety-symbolic', '')\
   ]"
 fi
 
