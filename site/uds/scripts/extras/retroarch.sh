@@ -8,7 +8,8 @@ download
 mkdir -p "$HOME"/.local/share/{icons,retroarch}
 mv /tmp/RetroArch-Linux-x86_64/RetroArch-Linux-x86_64.AppImage* "$HOME"/.local/share/retroarch/
 ln -fs "$HOME"/.local/share/retroarch/RetroArch-Linux-x86_64.AppImage "$HOME"/.local/bin/retroarch
-wget -q --show-progress -O "$HOME"/.local/share/icons/retroarch.svg https://upload.wikimedia.org/wikipedia/commons/3/3b/Retroarch.svg
+#wget -q --show-progress -O "$HOME"/.local/share/icons/retroarch.svg https://upload.wikimedia.org/wikipedia/commons/3/3b/Retroarch.svg
+wget -q --show-progress -O "$HOME"/.local/share/icons/retroarch.png https://cdn2.steamgriddb.com/icon/92b86da424c1b48b9810ce7a448e3e9f.png
 cat <<EOF |tee "$HOME"/.local/share/applications/retroarch.desktop>/dev/null
 [Desktop Entry]
 Version=1.0
