@@ -29,6 +29,9 @@ sudo mkdir -p /usr/local/{bin,share/applications}
 sudo wget -q --show-progress -O /usr/local/bin/pipewire-latency-switcher https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher
 sudo chmod +x /usr/local/bin/pipewire-latency-switcher
 sudo wget -q --show-progress -O /usr/local/share/applications/pipewire-latency-switcher.desktop https://rauldipeas.com.br/uds/settings/pipewire-latency-switcher.desktop
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+	sudo sed -i 's/audio-speakers/hifi' /usr/local/share/applications/pipewire-latency-switcher.desktop
+fi
 sudo wget -q --show-progress -O /usr/local/bin/toggle-pipewire-jack https://rauldipeas.com.br/uds/settings/toggle-pipewire-jack
 sudo chmod +x /usr/local/bin/toggle-pipewire-jack
 mkdir -p "$HOME"/.config/nohang

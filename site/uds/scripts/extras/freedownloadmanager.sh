@@ -11,3 +11,5 @@ enter_tmp
 download
 fix_launcher
 install_deb
+mkdir -p "$HOME"/.local/share/icons
+cp /opt/freedownloadmanager/icon.png "$HOME"/.local/share/icons/freedownloadmanager.png

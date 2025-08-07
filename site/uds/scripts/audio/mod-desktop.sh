@@ -14,7 +14,6 @@ cat <<EOF |tee "$HOME"/.local/share/applications/mod-desktop.desktop>/dev/null
 [Desktop Entry]
 Categories=AudioVideo;X-AudioEditing;Qt;
 Exec=$HOME/.local/share/mod-desktop/mod-desktop
-GenericName=MOD Desktop
 Icon=mod-desktop
 Name=MOD Desktop
 Terminal=false

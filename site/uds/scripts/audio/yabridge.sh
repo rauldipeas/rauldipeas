@@ -17,7 +17,7 @@ if command -v gnome-terminal>/dev/null;then
 Type=Application
 Name=yabridge sync
 Exec=gnome-terminal --title="yabridge sync" --geometry=80x24 -- bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=airwave-manager
+Icon=blueman-plugin
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true
@@ -28,7 +28,7 @@ EOF
 Type=Application
 Name=yabridge sync
 Exec=xterm -T 'yabridge sync' -fa 'Ubuntu Mono' -fs 11 -bg "#300a25" -fg white -e bash -c "yabridgectl sync --prune --verbose; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=airwave-manager
+Icon=blueman-plugin
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true

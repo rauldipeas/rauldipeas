@@ -39,8 +39,20 @@ gsettings set org.gnome.desktop.interface cursor-theme Bibata-Modern-Ice
 ## GNOME shell
 sudo apt install -y --reinstall\
     gnome-shell-extension-alphabetical-grid\
-    gnome-shell-extension- gsconnect\
-    gnome-shell-extension-prefs
+    gnome-shell-extension- gsconnect
+#    gnome-shell-extension-prefs
+
+mkdir -p "$HOME"/.local/share/applications
+cat <<EOF |tee "$HOME"/.local/share/applications/gnome-extensions-web.desktop
+[Desktop Entry]
+Type=Application
+Name=Extensions
+Name[pt_BR]=Extensões
+Exec=xdg-open https://extensions.gnome.org/local
+Icon=org.gnome.Extensions
+Terminal=false
+StartupNotify=true
+EOF
 
 dconf reset -f /org/gnome/shell/extensions/appindicator/
 dconf reset -f /org/gnome/shell/extensions/dash-to-dock/
@@ -61,29 +73,28 @@ gsettings set org.gnome.shell.extensions.ding start-corner top-right
 dconf write /org/gnome/shell/extensions/alphabetical-app-grid/sort-folder-contents false
 
 dconf write /org/gnome/shell/extensions/app-hider/hidden-apps "[\
-    'debian-uxterm.desktop',\
-    'debian-xterm.desktop',\
     'diodon.desktop',\
     'display-im6.q16.desktop',\
-    'info.desktop',\
     'micro.desktop',\
     'syncthing-start.desktop',\
     'syncthing-ui.desktop',\
     'winetricks.desktop'\
 ]"
 
-dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
-    ('2wydifuftb', 'gtk-dialog-authentication-panel', ''),\
-    ('Cable', 'ladi-starting', ''),\
-    ('Diodon', 'notes-panel', ''),\
-    ('Proton Mail Bridge', 'protonmail-indicator', ''),\
-    ('q4wine', 'folder-white-wine', ''),\
-    ('QjackCtl', 'gnome-device-manager', ''),\
-    ('rclone-browser', 'cloudstatus', ''),\
-    ('un-reboot', 'system-reboot-symbolic', ''),\
-    ('veracrypt', 'veracrypt-panel', ''),\
-    ('vlc', 'vlc-panel', '')\
-]"
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+  dconf write /org/gnome/shell/extensions/appindicator/custom-icons "[\
+      ('2wydifuftb', 'gtk-dialog-authentication-panel', ''),\
+      ('Cable', 'ladi-starting', ''),\
+      ('Diodon', 'notes-panel', ''),\
+      ('Proton Mail Bridge', 'protonmail-indicator', ''),\
+      ('q4wine', 'folder-white-wine', ''),\
+      ('QjackCtl', 'gnome-device-manager', ''),\
+      ('rclone-browser', 'cloudstatus', ''),\
+      ('un-reboot', 'system-reboot-symbolic', ''),\
+      ('veracrypt', 'veracrypt-panel', ''),\
+      ('vlc', 'vlc-panel', '')\
+  ]"
+fi
 
 dconf reset -f /org/gnome/shell/extensions/azwallpaper/
 dconf write /org/gnome/shell/extensions/azwallpaper/bing-download-directory "'/home/rauldipeas/Imagens/Bing Wallpapers'"
@@ -171,6 +182,9 @@ dconf write /org/gnome/shell/extensions/rounded-window-corners-reborn/global-rou
 dconf write /org/gnome/shell/extensions/status-area-horizontal-spacing/hpadding 3
 
 dconf write /org/gnome/shell/extensions/syncthing-toggle/port 8080
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+  dconf write /org/gnome/shell/extensions/syncthing-toggle/icon-name "'si-syncthing-idle'"
+fi
 
 dconf reset -f /org/gnome/shell/extensions/window-title-is-back/
 dconf write /org/gnome/shell/extensions/window-title-is-back/colored-icon true

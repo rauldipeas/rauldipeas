@@ -18,7 +18,7 @@ if command -v gnome-terminal>/dev/null;then
 Type=Application
 Name=Topgrade
 Exec=gnome-terminal --title="Topgrade" --geometry=80x24 -- bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=fwupd
+Icon=aptdaemon-update-cache
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true
@@ -29,7 +29,7 @@ EOF
 Type=Application
 Name=Topgrade
 Exec=xterm -T 'Topgrade' -fa 'Ubuntu Mono' -fs 11 -bg "#300a25" -fg white -e bash -c "topgrade; echo 'Pressione qualquer tecla para fechar...'; read -n1"
-Icon=update-manager
+Icon=aptdaemon-update-cache
 Terminal=false
 Categories=System;Utility;
 StartupNotify=true

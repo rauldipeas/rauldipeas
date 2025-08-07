@@ -1,14 +1,9 @@
 #!/bin/bash
 set -e
-BASENAME='iriun'
-LN='iriunwebcam'
 TARGET="$(curl -sL https://iriun.com/|grep deb|cut -d '"' -f4)"
-ICON_OLD='iriunwebcam'
-ICON_NEW='webcamoid'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
-fix_launcher
 if grep -E "liquorix|xanmod" <(uname -r);then
     cd /tmp
     rm -rf /tmp/v4l2loopback*
@@ -23,3 +18,7 @@ if grep -E "liquorix|xanmod" <(uname -r);then
 #    sudo modprobe v4l2loopback
 fi
 install_deb
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+    mkdir -p "$HOME"/.icons/Papirus-Dark/64x64/apps
+    ln -fs /usr/share/icons/Papirus-Dark/64x64/apps/webcamoid.svg "$HOME"/.icons/Papirus-Dark/64x64/apps/iriunwebcam.svg
+fi

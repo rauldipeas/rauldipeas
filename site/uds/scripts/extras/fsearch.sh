@@ -1,12 +1,11 @@
 #!/bin/bash
 set -e
-BASENAME='fsearch'
-LN='io.github.cboxdoerfer.FSearch'
-ICON_OLD='io.github.cboxdoerfer.FSearch'
-ICON_NEW='gnome-search-tool'
 PPA='christian-boxdoerfer/fsearch-stable'
 INSTNAME='fsearch'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
-fix_launcher
 install_deb
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+    mkdir -p "$HOME"/.icons/Papirus-Dark/64x64/apps
+    ln -fs /usr/share/icons/Papirus-Dark/64x64/apps/gnome-search-tool.svg "$HOME"/.icons/Papirus-Dark/64x64/apps/io.github.cboxdoerfer.FSearch.svg
+fi

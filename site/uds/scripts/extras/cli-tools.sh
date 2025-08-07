@@ -20,6 +20,7 @@ cd /tmp
 rm -rf /tmp/ble.sh
 git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh
 make -C ble.sh install PREFIX="$HOME"/.local
+set_bashrc
 cat <<EOF |tee "$HOME"/.bashrc.d/ble.sh>/dev/null
 #source "$HOME"/.local/share/blesh/ble.sh --noattach
 #[[ ! \${BLE_VERSION-} ]] || ble-attach

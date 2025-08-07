@@ -7,6 +7,8 @@ download
 tar xf Natron*.tar.xz
 rm Natron*.tar.xz
 mv Natron* "$HOME"/.local/share/natron
+mkdir -p "$HOME"/.local/share/icons
+cp "$HOME"/.local/share/natron/Resources/pixmaps/natronIcon256_linux.png "$HOME"/.local/share/icons/natron.png
 cat <<EOF |tee "$HOME"/.local/share/applications/natron.desktop>/dev/null
 [Desktop Entry]
 Version=1.0

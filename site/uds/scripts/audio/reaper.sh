@@ -11,8 +11,13 @@ cd /tmp
 rm -f /tmp/*.tar.xz
 wget -q --show-progress https://sws-extension.org/download/pre-release/"$(wget -qO- http://sws-extension.org/download/pre-release/|grep Linux-x86_64|head -n1|cut -d '"' -f4)"
 tar fx sws-*-Linux-x86_64-*.tar.xz -C "$HOME"/.config/REAPER
-mkdir -p "$HOME"/.icons/Papirus-Dark/128x128/mimetypes
-cp /usr/local/share/icons/hicolor/scalable/mimetypes/cockos-reaper-* "$HOME"/.icons/Papirus-Dark/128x128/mimetypes/
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+    mkdir -p "$HOME"/.icons/Papirus-Dark/128x128/mimetypes
+    cp /usr/local/share/icons/hicolor/scalable/mimetypes/cockos-reaper-* "$HOME"/.icons/Papirus-Dark/128x128/mimetypes/
+    else
+    mkdir -p "$HOME"/.icons/Yaru/256x256/mimetypes
+    cp /usr/local/share/icons/hicolor/scalable/mimetypes/cockos-reaper-* "$HOME"/.icons/Yaru/256x256/mimetypes/
+fi
 git clone https://github.com/mrbvrz/segoe-ui-linux
 cd segoe-ui-linux
 chmod +x install.sh

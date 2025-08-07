@@ -15,4 +15,5 @@ download
 fix_launcher
 mv /tmp/Shutter*.deb /tmp/shutter-encoder.deb
 install_deb
-sudo ln -sf /usr/lib/Shutter\ Encoder/usr/bin/icon.png /usr/share/icons/hicolor/256x256/shutter-encoder.png
+mkdir -p "$HOME"/.local/share/icons
+ln -sf /usr/lib/Shutter\ Encoder/usr/bin/icon.png "$HOME"/.local/share/icons/shutter-encoder.png

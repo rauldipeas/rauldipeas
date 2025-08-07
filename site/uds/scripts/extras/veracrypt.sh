@@ -10,6 +10,7 @@ cat <<EOF |tee "$HOME"/.config/autostart/veracrypt.desktop>/dev/null
 [Desktop Entry]
 Type=Application
 Exec=veracrypt-mount
+Icon=veracrypt
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
