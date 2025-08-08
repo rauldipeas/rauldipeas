@@ -8,8 +8,8 @@ sudo npm install -f pnpm
 mkdir -p "$HOME"/.config/VSCodium/User
 if [ $USER == rauldipeas ];then
 	cd /tmp
-	rm -rf /tmp/yaru-vscode
-	git clone https://github.com/AdsonCicilioti/yaru-vscode.git
+	rm -fr /tmp/yaru-vscode
+	git clone -q https://github.com/AdsonCicilioti/yaru-vscode.git
 	cd yaru-vscode
 	npm install
 	npx vsce package

@@ -3,10 +3,10 @@ set -e
 WINEVERSION="9.0"
 TkG="https://github.com/Kron4ek/Wine-Builds/releases/download/"$WINEVERSION"/wine-"$WINEVERSION"-staging-tkg-amd64.tar.xz"
 cd /tmp
-rm -rf /tmp/wine*tkg*
+rm -fr /tmp/wine*tkg*
 wget -q --show-progress "$TkG"
 tar -xf wine*tkg*.tar.xz
-rm -rf wine*tkg*.tar.xz "$HOME"/.local/share/wine-tkg
+rm -fr wine*tkg*.tar.xz "$HOME"/.local/share/wine-tkg
 mv wine*tkg* "$HOME"/.local/share/wine-tkg
 cat <<EOF |sudo tee /etc/profile.d/wine-tkg.sh>/dev/null
 if [ -d "\$HOME"/.local/share/wine-tkg ] ; then
@@ -23,7 +23,7 @@ if [ -d "$HOME"/.wine ];then
 fi
 winetricks -f -q dxvk mfc42
 #winetricks dwrite=disabled # (caractéres estranhos tipo árabe)
-rm -rf\
+rm -fr\
 	"$HOME"/.config/menus/applications-merged/wine*\
 	"$HOME"/.local/share/applications/wine*\
 	"$HOME"/.local/share/desktop-directories/wine*
@@ -35,8 +35,8 @@ find "$HOME/.config/menus" "$HOME/.local/share/applications/wine" "$HOME/.local/
     -iname '*agreement*' -o -iname '*changelog*' -o -iname '*chart*' -o -iname '*eula*' \
     -o -iname '*guide*' -o -iname '*manual*' -o -iname '*un-install*' -o -iname '*uninstall*' \
     -o -iname '*what*' \
-  \) ! -iname '*revo*' -exec rm -rfv {} +
+  \) ! -iname '*revo*' -exec rm -frv {} +
 find "$HOME"/.local/share/icons/hicolor/ -type f \( -iname "*.png" -o -iname "*.svg" \) -exec identify {} \; 2>&1\
 	|grep -i error|cut -d '@' -f1|sed 's/.*header //g'\
-	|sed 's/`//g'|sed 's/\ /\\ /g'|sed "s/'\\\//g"|xargs rm -rfv
+	|sed 's/`//g'|sed 's/\ /\\ /g'|sed "s/'\\\//g"|xargs rm -frv
 find "$HOME"/.local/share/applications/wine -type d -empty -delete

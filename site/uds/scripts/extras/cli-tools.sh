@@ -17,8 +17,8 @@ sudo apt install -y --reinstall bat #batcat
 
 ## Ble.sh
 cd /tmp
-rm -rf /tmp/ble.sh
-git clone --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh
+rm -fr /tmp/ble.sh
+git clone -q --recursive --depth 1 --shallow-submodules https://github.com/akinomyoga/ble.sh
 make -C ble.sh install PREFIX="$HOME"/.local
 set_bashrc
 cat <<EOF |tee "$HOME"/.bashrc.d/ble.sh>/dev/null

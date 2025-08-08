@@ -6,10 +6,10 @@ enter_tmp
 download
 if grep -E "liquorix|xanmod" <(uname -r);then
     cd /tmp
-    rm -rf /tmp/v4l2loopback*
+    rm -fr /tmp/v4l2loopback*
     wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/universe/v/v4l2loopback/"$(wget -qO- http://archive.ubuntu.com/ubuntu/pool/universe/v/v4l2loopback/|grep -oP 'v4l2loopback-dkms_[^"]+?\.deb'|sort -V|tail -n1)"
     sudo apt install -y --reinstall ./v4l2loopback*.deb
-#    git clone https://github.com/v4l2loopback/v4l2loopback.git
+#    git clone -q https://github.com/v4l2loopback/v4l2loopback.git
 #    cd "$PWD"/v4l2loopback
 #    make
 #    sudo apt install -y --reinstall checkinstall

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 enter_tmp(){
-    sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -rf {} +
+    sudo find /tmp -mindepth 1 -maxdepth 1 -writable -not -path "/tmp/.veracrypt*" -not -path "*-unix*" -exec rm -fr {} +
     cd /tmp
 }
 

@@ -18,7 +18,7 @@ DEPS="cmake\
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 install_deb
-git clone --recursive https://gitlab.com/mattbas/glaxnimate.git
+git clone -q --recursive https://gitlab.com/mattbas/glaxnimate.git
 cd glaxnimate
 mkdir build
 cd build
@@ -27,5 +27,5 @@ make
 make translations
 sudo make install
 cd /tmp
-rm -rf /tmp/glaxnimate
+rm -fr /tmp/glaxnimate
 printf '\nStartupWMClass=glaxnimate'|sudo tee -a /usr/local/share/applications/org.mattbas.Glaxnimate.desktop>/dev/null

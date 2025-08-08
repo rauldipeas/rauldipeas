@@ -6,5 +6,5 @@ wget -q --show-progress "$(wget -qO- https://api.github.com/repos/liuanlin-mx/MX
 mkdir -p "$HOME"/.vst
 unzip -oqq ubuntu*x86_64*.zip>/dev/null
 rm ubuntu*x86_64*.zip
-rm -rf "$HOME"/.vst/mx_tune.so
+rm -fr "$HOME"/.vst/mx_tune.so
 mv /tmp/ubuntu*x86_64*/*.so "$HOME"/.vst/

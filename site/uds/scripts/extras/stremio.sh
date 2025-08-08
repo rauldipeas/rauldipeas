@@ -5,7 +5,7 @@ source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
 wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/"$(wget -qO- http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/|grep -oP 'libssl1.1_[^"]+?amd64\.deb'|sort -V|tail -n1)"
-rm -rf "$PWD"/stremio_extract
+rm -fr "$PWD"/stremio_extract
 dpkg-deb -R "$PWD"/stremio*.deb "$PWD"/stremio_extract
 rm -f "$PWD"/stremio*.deb
 sed -i 's/libmpv1 (>=0.30.0)/libmpv2/g' "$PWD"/stremio_extract/DEBIAN/control

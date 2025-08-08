@@ -18,7 +18,7 @@ if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark
     mkdir -p "$HOME"/.icons/Yaru/256x256/mimetypes
     cp /usr/local/share/icons/hicolor/scalable/mimetypes/cockos-reaper-* "$HOME"/.icons/Yaru/256x256/mimetypes/
 fi
-git clone https://github.com/mrbvrz/segoe-ui-linux
+git clone -q https://github.com/mrbvrz/segoe-ui-linux
 cd segoe-ui-linux
 chmod +x install.sh
 yes|sudo ./install.sh
