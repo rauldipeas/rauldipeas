@@ -245,7 +245,6 @@ gei 5410 # grand-theft-focus
 #gei 1319 # gsconnect
 gei 4451 # logo-menu
 gei 7048 # rounded-window-corners-reborn
-gei 4099 # no-overview
 gei 355  # status-area-horizontal-spacing
 gei 7180 # syncthing-toggle
 #gei 6586 # system-monitor-tray-indicator
