@@ -34,3 +34,7 @@ Categories=System;Utility;
 StartupNotify=true
 EOF
 fi
+if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then
+    mkdir -p "$HOME"/.icons/Papirus-Dark/64x64/apps
+    ln -fs /usr/share/icons/Papirus-Dark/64x64/apps/airwave-manager.svg "$HOME"/.icons/Papirus-Dark/64x64/apps/blueman-plugin.svg
+fi
