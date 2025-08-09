@@ -6,3 +6,6 @@ INSTNAME='obs-studio'
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
 install_deb
+for type in $(grep -E '^(audio|video)/' /usr/share/mime/types | cut -d: -f1); do
+    xdg-mime default vlc.desktop "$type"
+done
