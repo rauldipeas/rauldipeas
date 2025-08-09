@@ -18,7 +18,7 @@ DEPS="cmake\
 source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 install_deb
-git clone -q --recursive https://gitlab.com/mattbas/glaxnimate.git
+git clone -q --recursive https://gitlab.com/mattbas/glaxnimate
 cd glaxnimate
 mkdir build
 cd build

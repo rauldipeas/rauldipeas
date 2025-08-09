@@ -9,7 +9,7 @@ mkdir -p "$HOME"/.config/VSCodium/User
 if [ $USER == rauldipeas ];then
 	cd /tmp
 	rm -fr /tmp/yaru-vscode
-	git clone -q https://github.com/AdsonCicilioti/yaru-vscode.git
+	git clone -q https://github.com/AdsonCicilioti/yaru-vscode
 	cd yaru-vscode
 	npm install
 	npx vsce package
