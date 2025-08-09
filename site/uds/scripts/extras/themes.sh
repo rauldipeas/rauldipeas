@@ -213,7 +213,8 @@ gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 'u
 gsettings set org.gnome.shell favorite-apps "[\
     'org.gnome.Nautilus.desktop',\
     'librewolf.desktop',\
-    'rambox.desktop',\
+    'thunderbird.desktop',\
+    'spike-desktop.desktop',\
     'reaper-AM.desktop',\
     'com.blackmagicdesign.resolve.desktop',\
     'gimp.desktop',\
