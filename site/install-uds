@@ -1,16 +1,5 @@
 #!/bin/bash
 set -e
-#mkdir -p "$HOME"/.local/share/applications
-#cat <<EOF |tee "$HOME"/.local/share/applications/uds.desktop>/dev/null
-#[Desktop Entry]
-#Type=Application
-#Name=Pós instalação do Ubuntu (Estúdio)
-#Exec=bash -c "bash <(wget -qO- https://rauldipeas.com.br/uds/uds.sh)"
-#Icon=package-manager-icon
-#Terminal=false
-#Categories=System;Utility;
-#StartupNotify=true
-#EOF
 rm -f "$HOME"/.local/share/applications/uds.desktop
 cd /tmp
 rm -f /tmp/uds.deb

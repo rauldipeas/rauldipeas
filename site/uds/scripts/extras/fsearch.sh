@@ -2,7 +2,7 @@
 set -e
 PPA='christian-boxdoerfer/fsearch-stable'
 INSTNAME='fsearch'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
 install_deb
 if [ "$(gsettings get org.gnome.desktop.interface icon-theme)" == "'Papirus-Dark'" ];then

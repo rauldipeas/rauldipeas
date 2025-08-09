@@ -13,7 +13,7 @@ elif printf "$gpu_info"|grep -qE "AMD|Intel">/dev/null;then
 	sudo apt install -y --reinstall libgl1-mesa-dri libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
 	#cd /tmp
 	#rm -f /tmp/*.deb
-	#wget -q --show-progress "$(wget -qO- https://api.github.com/repos/Umio-Yasuno/amdgpu_top/releases|grep browser_download_url|grep amd64.deb|grep without_gui|head -n1|cut -d '"' -f4)"
+	#wget -q --show-progress "$(curl -s https://api.github.com/repos/Umio-Yasuno/amdgpu_top/releases|grep browser_download_url|grep amd64.deb|grep without_gui|head -n1|cut -d '"' -f4)"
 	#sudo apt install -y --reinstall "$PWD"/amdgpu-top_without_gui*.deb
 	#printf 'Hidden=true'|sudo tee /usr/share/applications/amdgpu_top.desktop>/dev/null
 	#printf 'amdgpu'|sudo tee /etc/initramfs-tools/modules

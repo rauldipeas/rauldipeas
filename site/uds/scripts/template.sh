@@ -11,7 +11,7 @@ ICON_NEW=''
 DEPS=''
 PPA=''
 INSTNAME=''
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
 add_ppa

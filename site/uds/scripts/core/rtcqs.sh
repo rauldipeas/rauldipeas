@@ -2,7 +2,7 @@
 set -e
 DEPS="pipx\
     python3-tk"
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 install_deb
 pipx install --force rtcqs
 mkdir -p "$HOME"/.local/share/{applications,icons}

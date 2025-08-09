@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 TARGET="$(curl -sL https://iriun.com/|grep deb|cut -d '"' -f4)"
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
 if grep -E "liquorix|xanmod" <(uname -r);then
     cd /tmp
     rm -fr /tmp/v4l2loopback*
-    wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/universe/v/v4l2loopback/"$(wget -qO- http://archive.ubuntu.com/ubuntu/pool/universe/v/v4l2loopback/|grep -oP 'v4l2loopback-dkms_[^"]+?\.deb'|sort -V|tail -n1)"
+    wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/universe/v/v4l2loopback/"$(curl -s http://archive.ubuntu.com/ubuntu/pool/universe/v/v4l2loopback/|grep -oP 'v4l2loopback-dkms_[^"]+?\.deb'|sort -V|tail -n1)"
     sudo apt install -y --reinstall ./v4l2loopback*.deb
 #    git clone -q https://github.com/v4l2loopback/v4l2loopback
 #    cd "$PWD"/v4l2loopback

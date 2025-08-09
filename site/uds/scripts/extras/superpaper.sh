@@ -2,7 +2,7 @@
 set -e
 w#LN=''
 DEPS='python3-wxgtk4.0'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 install_deb
 pipx install --force superpaper --system-site-packages
 mkdir -p "$HOME"/.local/share/icons

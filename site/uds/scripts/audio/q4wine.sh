@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 INSTNAME='q4wine'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 sudo dpkg --add-architecture i386
 sudo apt update
 install_deb

@@ -3,7 +3,7 @@ set -e
 DEPS='thunderbird-locale-pt-br'
 PPA='mozillateam/ppa'
 INSTNAME='thunderbird-gnome-support'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
 cat <<EOF |sudo tee /etc/apt/preferences.d/thunderbird
 Package: thunderbird*

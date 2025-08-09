@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
-TARGET="$(wget -qO- 'https://www.retroarch.com/?page=platforms'|grep AppImage|grep RetroArch.7z|cut -d '"' -f2)"
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+TARGET="$(curl -s 'https://www.retroarch.com/?page=platforms'|grep AppImage|grep RetroArch.7z|cut -d '"' -f2)"
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
 7za x -y -bsp0 RetroArch.7z>/dev/null

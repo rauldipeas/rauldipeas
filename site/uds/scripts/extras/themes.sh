@@ -3,7 +3,7 @@ set -e
 gei() {
   ID="$1"
   SHELL_VER=$(gnome-shell --version | awk '{print $3}')
-  EXT_INFO=$(wget -qO- "https://extensions.gnome.org/extension-info/?pk=$ID&shell_version=$SHELL_VER")
+  EXT_INFO=$(curl -s "https://extensions.gnome.org/extension-info/?pk=$ID&shell_version=$SHELL_VER")
   UUID=$(echo "$EXT_INFO" | jq -r .uuid)
   DOWNLOAD_URL=$(echo "$EXT_INFO" | jq -r .download_url)
   
@@ -28,7 +28,7 @@ gei() {
 mkdir -p /tmp/bibata
 cd /tmp/bibata
 rm -f /tmp/bibata/*.xz
-wget -q --show-progress "$(wget -qO- https://api.github.com/repos/ful1e5/Bibata_Cursor/releases|grep browser_download_url|grep download|grep  Modern-Ice.tar.xz|head -n1|cut -d '"' -f4)"
+wget -q --show-progress "$(curl -s https://api.github.com/repos/ful1e5/Bibata_Cursor/releases|grep browser_download_url|grep download|grep  Modern-Ice.tar.xz|head -n1|cut -d '"' -f4)"
 tar -xf Bibata*.tar.xz
 rm Bibata*.tar.xz
 sudo mv Bibata* /usr/share/icons/

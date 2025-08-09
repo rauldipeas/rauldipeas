@@ -5,7 +5,7 @@ DEPS="libcanberra-gtk-module\
 	gtk2-engines-pixbuf"
 PPA='ubuntuhandbook1/gimp-3'
 INSTNAME='gimp'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
 install_deb
 mkdir -p "$HOME"/.config/GIMP/3.0

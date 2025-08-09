@@ -3,13 +3,13 @@ set -e
 BASENAME='shutter-encoder'
 LN='Shutter_Encoder'
 SWMC='application-Shutter'
-versao=$(wget -qO- 'https://www.shutterencoder.com/old%20versions/Linux/'|grep -Po 'Shutter Encoder \K[0-9]+\.[0-9]+'|sort -V | tail -1)
+versao=$(curl -s 'https://www.shutterencoder.com/old%20versions/Linux/'|grep -Po 'Shutter Encoder \K[0-9]+\.[0-9]+'|sort -V | tail -1)
 IFS=. read -r major minor <<< "$versao"
 minor=$((minor + 1))
 TARGET="https://www.shutterencoder.com/Shutter%20Encoder%20${major}.${minor}%20Linux%2064bits.deb"
 ICON_OLD='/usr/lib/Shutter\ Encoder/usr/bin/icon.png'
 ICON_NEW='shutter-encoder'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
 fix_launcher

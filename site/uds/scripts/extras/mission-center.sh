@@ -3,7 +3,7 @@ set -e
 BASENAME='missioncenter'
 LN='mission-center-AM'
 SWMC='io.missioncenter.MissionCenter'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 fix_launcher
 am -i --icons mission-center
 sudo bash /usr/local/share/custom-launchers/missioncenter

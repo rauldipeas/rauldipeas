@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 TARGET='https://prerelease.keybase.io/keybase_amd64.deb'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 enter_tmp
 download
 install_deb

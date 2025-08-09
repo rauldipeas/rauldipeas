@@ -3,8 +3,8 @@ set -e
 mkdir -p /tmp/mod
 cd /tmp/mod
 rm -f /tmp/mod/*.xz
-#wget -q --show-progress "$(wget -qO- https://api.github.com/repos/mod-audio/mod-desktop/releases|grep browser_download_url|grep download|grep linux-x86_64|head -n1|cut -d '"' -f4)"
-wget -q --show-progress $(wget -qO- https://mod.audio/desktop|grep tar.xz|cut -d '"' -f4)
+#wget -q --show-progress "$(curl -s https://api.github.com/repos/mod-audio/mod-desktop/releases|grep browser_download_url|grep download|grep linux-x86_64|head -n1|cut -d '"' -f4)"
+wget -q --show-progress $(curl -s https://mod.audio/desktop|grep tar.xz|cut -d '"' -f4)
 tar -xf mod-desktop*.tar.xz
 rm mod-desktop*.tar.xz
 cp -r mod-desktop*/mod-desktop "$HOME"/.local/share/

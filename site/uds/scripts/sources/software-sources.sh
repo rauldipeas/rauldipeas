@@ -1,15 +1,15 @@
 #!/bin/bash
 set -e
 ## AM
-sudo bash -c "$(wget -qO- https://github.com/ivan-hc/AM/raw/main/INSTALL)"
+sudo bash -c "$(curl -s https://github.com/ivan-hc/AM/raw/main/INSTALL)"
 
 ## Pacstall
-yes|sudo bash -c "$(wget -qO- https://pacstall.dev/q/install)"
+yes|sudo bash -c "$(curl -s https://pacstall.dev/q/install)"
 
 ## Topgrade
 cd /tmp
 rm -f /tmp/*.deb
-wget -q --show-progress "$(wget -qO- https://api.github.com/repos/topgrade-rs/topgrade/releases|grep browser_download_url|grep deb|head -n1|cut -d '"' -f4)"
+wget -q --show-progress "$(curl -s https://api.github.com/repos/topgrade-rs/topgrade/releases|grep browser_download_url|grep deb|head -n1|cut -d '"' -f4)"
 sudo apt install -y --reinstall ./topgrade*.deb
 mkdir -p "$HOME"/.local/share/applications
 if command -v gnome-terminal>/dev/null;then

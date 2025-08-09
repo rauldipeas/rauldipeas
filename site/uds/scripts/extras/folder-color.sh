@@ -2,6 +2,6 @@
 set -e
 PPA='costales/folder-color'
 INSTNAME='folder-color'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
 install_deb

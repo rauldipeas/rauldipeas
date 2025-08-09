@@ -31,7 +31,7 @@ ipcMain.handle('executar-scripts', async (_, scripts) => {
   let comando = "";
   scripts.forEach(script => {
     const url = `https://rauldipeas.com.br/uds/scripts/${script}`;
-    comando += `echo 'Executando ${script}...'; bash <(wget -qO- '${url}'); echo; read -n1 -s -r -p 'Pressione qualquer tecla para continuar...'; clear; `;
+    comando += `echo 'Executando ${script}...'; bash <(curl -s '${url}'); echo; read -n1 -s -r -p 'Pressione qualquer tecla para continuar...'; clear; `;
   });
 
   comando += `echo 'Todos os scripts foram executados.'; read -n1 -s -r -p 'Pressione qualquer tecla para fechar...';`;

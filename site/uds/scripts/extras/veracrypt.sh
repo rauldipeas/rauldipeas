@@ -2,7 +2,7 @@
 set -e
 PPA='unit193/encryption'
 INSTNAME='veracrypt'
-source <(wget -qO- https://rauldipeas.com.br/uds/functions.sh)
+source <(curl -s https://rauldipeas.com.br/uds/functions.sh)
 add_ppa
 install_deb
 mkdir -p "$HOME"/{.config/autostart,.local/bin}

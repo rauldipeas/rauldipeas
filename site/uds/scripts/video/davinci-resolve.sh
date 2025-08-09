@@ -38,9 +38,9 @@ install_resolve() {
 fix_pango() {
 	rm -f /tmp/*.deb
 	for pkg in libpango-1.0-0 libpangoft2-1.0-0 libpangocairo-1.0-0;do
-	wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/"$(wget -qO- http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/|grep -oP "${pkg}_[^\"']+?amd64\.deb"|sort -V|tail -n1)"
+	wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/"$(curl -s http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/|grep -oP "${pkg}_[^\"']+?amd64\.deb"|sort -V|tail -n1)"
 	done
-	wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/"$(wget -qO- http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/|grep -oP 'libgdk-pixbuf-2.0-0_[^"]+?amd64\.deb'|sort -V|tail -n1)"
+	wget -q --show-progress http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/"$(curl -s http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/|grep -oP 'libgdk-pixbuf-2.0-0_[^"]+?amd64\.deb'|sort -V|tail -n1)"
 	dpkg-deb -x libpangocairo-1.0-0_1.50.6+ds-2ubuntu1_amd64.deb "$PWD"/pango
 	dpkg-deb -x libpango-1.0-0_1.50.6+ds-2ubuntu1_amd64.deb "$PWD"/pango
 	dpkg-deb -x libpangoft2-1.0-0_1.50.6+ds-2ubuntu1_amd64.deb "$PWD"/pango
