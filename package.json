@@ -19,7 +19,7 @@
     "linux": {
       "target": "deb",
       "category": "Utility",
-      "icon": "site/uds/package-manager-icon.svg",
+      "icon": "site/uds/mx-packageinstaller.svg",
       "maintainer": "Raul Dipeas <rauldipeas@disroot.org>"
     }
   }
