@@ -1,5 +1,9 @@
 name: Implantação
-on: push
+on:
+  push:
+  repository_dispatch:
+    types: [build]
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -8,6 +12,11 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+      - name: Download do conteúdo do UDS
+        uses: actions/checkout@v3
+        with:
+          repository: rauldipeas/uds
+          path: site/uds
       - name: Compilação do Jekyll (blog)
         run: bundle exec jekyll build -s blog -d site/blog
         env:
