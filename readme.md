@@ -21,8 +21,8 @@
   <img src="https://github-readme-stats.vercel.app/api?username=rauldipeas&show_icons=true&theme=transparent&hide_border=true&hide_title=true&locale=pt-br">
   </br>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/rauldipeas/rauldipeas/blob/snake/snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/rauldipeas/rauldipeas/blob/snake/snake.svg">
-    <img src="https://github.com/rauldipeas/rauldipeas/blob/snake/snake.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/rauldipeas/rauldipeas/raw/snake/snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/rauldipeas/rauldipeas/raw/snake/snake.svg">
+    <img src="https://github.com/rauldipeas/rauldipeas/raw/snake/snake.svg">
   </picture>
 </div>
