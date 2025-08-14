@@ -3,5 +3,7 @@ blog/_site
 dist
 Gemfile.lock
 node_modules
-social/_site
+social/.bundle
 social/.sass-cache
+social/_site
+social/vendor
