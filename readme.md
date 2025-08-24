@@ -10,7 +10,7 @@
   <a href="https://phanpy.social/#/mastodon.social/a/1202480?media=1"><img src="https://img.shields.io/mastodon/follow/001202480?color=6263fd&domain=https%3A%2F%2Fmastodon.social&label=Mastodon&logo=mastodon&style=for-the-badge"></a>
   <a href="https://youtube.com/rauldipeas"><img src="https://img.shields.io/youtube/channel/subscribers/UCDujDO27n_ItUi_mPDXEZpQ?logoColor=red&=label=YouTuhe&logo=youtube&style=for-the-badge"></a>
   <br>
-  <a href="https://estudio-debian.github.io"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/mx-packageinstaller.svg"></a>
+  <a href="https://estudio-debian.github.io"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/carla.svg"></a>
   <a href="https://rauldipeas.com.br/blog"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/blogilo.svg"></a>
   <a href="mailto:rauldipeas@disroot.org"><img src="https://rauldipeas.com.br/assets/images/spike.svg"></a>
   <a href="https://phanpy.social/#/mastodon.social/a/1202480?media=1"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/mstdn.svg"></a>
