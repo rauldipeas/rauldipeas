@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "primeiro-commit",
+      "type": "shell",
+      "command": "bash",
+      "args": ["$PWD/git-init-push.sh", "", ""],
+      "group": "build"
+    }
+  ]
+}
