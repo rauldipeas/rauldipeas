@@ -1,0 +1,6 @@
+steps:
+  - label: "Perfil"
+    command: bash animations.sh
+    timeout_in_minutes: 480
+    secrets:
+      - FORGEJO_COMMIT_TOKEN
