@@ -9,7 +9,7 @@
   <a href="https://soundcloud.com/rauldipeas"><img src="https://img.shields.io/badge/SoundCloud-ff5500?logo=soundcloud&logoColor=fff&style=for-the-badge"></a>
   <a href="https://trakt.tv/users/rauldipeas"><img src="https://img.shields.io/badge/Trakt-ED1C24?logo=trakt&logoColor=fff&style=for-the-badge"></a>
   <br>
-  <a href="https://estudio-pages.pages.dev"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/distributor-logo-ubuntu-studio.svg"></a>
+  <a href="https://estudio-plus.pages.dev"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/distributor-logo-ubuntu-studio.svg"></a>
   <a href="https://instagram.com/bandasempregeek"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/friture.svg"></a>
   <a href="https://rauldipeas.com.br/blog"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/blogilo.svg"></a>
   <a href="https://instagram.com/raul_dipeas"><img src="https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/64x64/apps/instagram.svg"></a>
